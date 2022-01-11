@@ -9,6 +9,8 @@
 
 body {
     max-width: 600px;
+    min-width: 250px;
+    width:90%;
     margin: auto;
 }
 
@@ -17,16 +19,16 @@ header {
     background-color: #333745;
     text-align: center;
     justify-items: center;
-    display: grid;
-    grid-template-columns: 200px 400px;
-    grid-template-rows: 200px;
-    width: 600px;
+    display: block;
     border-radius: 10px;
     margin-top: 30px;
+    padding: 20px;
 }
 
 header img {
-    width: 150px;
+    width: 100%;
+    min-width: 186px;
+    max-width: 90%;
     align-self: center;
     grid-column: 1/2;
     border-radius: 10px;
@@ -36,7 +38,7 @@ header img {
 header h1 {
     align-self: center;
     grid-column: 2/3;
-    font-size: 3em;
+    font-size: 2.2em;
     font-family: 'Dekko', cursive;
 }
 
@@ -54,6 +56,7 @@ h2 {
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0px 5px;
+    font-size: 1em;
 }
 
 nav ul {

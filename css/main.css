@@ -37,11 +37,11 @@ header h1 {
     align-self: center;
     grid-column: 2/3;
     font-size: 3em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Dekko', cursive;
 }
 
 h2, ul, p, footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 
 main{

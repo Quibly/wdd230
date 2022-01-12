@@ -29,6 +29,7 @@ header img {
     width: 100%;
     min-width: 186px;
     max-width: 90%;
+    max-width: 299px;
     align-self: center;
     grid-column: 1/2;
     border-radius: 10px;

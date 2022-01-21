@@ -16,6 +16,7 @@ body {
 
 header {
     background-color: #6b0504;
+    border: 1px solid black;
 }
 
 div a {
@@ -25,6 +26,7 @@ div a {
     text-decoration: none;
     color: black;
     background-color: #e6af2e;
+    border: 1px solid black;
     font-family: 'IBM Plex Sans', sans-serif;
     align-self: center;
     padding: 20px;
@@ -78,6 +80,7 @@ footer {
     margin-top: 20px;
     background-color: #a3320b;
     text-align: center;
+    border: 1px solid black;
 }
 
 footer div {

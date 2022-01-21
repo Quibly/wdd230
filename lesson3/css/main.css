@@ -7,3 +7,145 @@
 
 font-family: 'Gelasio', serif;
 font-family: 'IBM Plex Sans', sans-serif;*/
+
+body {
+    width:90%;
+    margin: 0 auto;
+    min-width: 400px;
+}
+
+header {
+    background-color: #6b0504;
+}
+
+div a {
+    font-size: 20px;
+    width: 145px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: #e6af2e;
+    font-family: 'IBM Plex Sans', sans-serif;
+    align-self: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.head_nav div {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    font-family: 'Gelasio', serif;
+    color: #6b0504;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #a3320b;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #001514;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+}
+
+.persona, .scenarios div {
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #a3320b;
+    text-align: center;
+}
+
+footer div {
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+table {
+    box-shadow: 0px 0px 10px black;
+}
+
+table, th, td {
+    font-size: 1.2em;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    padding:5px;
+    text-align: center;
+}
+
+#color-table-1 td:nth-child(1), #color-table-1 th:nth-child(1) {
+    background-color: #e6af2e;
+    color: black;
+}
+
+#color-table-1 td:nth-child(2), #color-table-1 th:nth-child(2) {
+    background-color: #a3320b;
+    color: white;
+}
+
+#color-table-1 td:nth-child(3), #color-table-1 th:nth-child(3) {
+    background-color: #6b0504;
+    color: white;
+}
+
+#color-table-2 td:nth-child(1), #color-table-2 th:nth-child(1), #color-table-2 td:nth-child(2), #color-table-2 th:nth-child(2) {
+    color: #6b0504;
+}
+
+#type-table-1 td:nth-child(1), #type-table-1 th:nth-child(1), #type-table-1 td:nth-child(2), #type-table-1 th:nth-child(2),
+#type-table-2 td:nth-child(3), #type-table-2 th:nth-child(3) {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#type-table-1 tr td:nth-child(3), #type-table-1 tr th:nth-child(3), 
+#type-table-2 td:nth-child(1), #type-table-2 th:nth-child(1), #type-table-2 td:nth-child(2), #type-table-2 th:nth-child(2) {
+    font-family: 'Gelasio', serif;
+}
+
+@media only screen and (min-width: 600px) {
+
+    header nav div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .head_nav div {
+        flex: 1 1 auto;
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    header nav div {
+        display: flex;
+        flex-direction: row;
+    }
+}

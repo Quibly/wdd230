@@ -12,60 +12,56 @@
 </head>
 <body>
     <header>
+        <img src="" alt="">
         <nav>
             <h1>
                 Vernal Commerce Site Plan
             </h1>
-            <ul>
-                <li><a href="/lesson3/index.html">Home</a></li>
-                <li><a href="/lesson3/target-audience.html">Target Audience</a></li>
-                <li><a href="/lesson3/color-scheme.html">Color Scheme</a></li>
-                <li><a href="/lesson3/typography.html">Typography</a></li>
-            </ul>
+            <div class="head_nav">
+                <div><a href="/lesson3/index.html">Home</a></div>
+                <div><a href="/lesson3/target-audience.html">Target Audience</a></div>
+                <div><a href="/lesson3/color-scheme.html">Color Scheme</a></div>
+                <div><a href="/lesson3/typography.html">Typography</a></div>
+            </div>
         </nav>
     </header>
     <main>
         <h2>Color Scheme</h2>
-        <table>
+        <!--CSS HEX
+        --dark-jungle-green: #001514ff;
+        --white: #fbfffeff;
+        --blood-red: #6b0504ff;
+        --chinese-red: #a3320bff;
+        --goldenrod: #e6af2eff;
+        -->
+        <table id="color-table-1">
             <tr>
-                <th>Site Header</th>
                 <th>Header Navigation</th>
                 <th>Footer Navigation</th>
                 <th>H1 Heading</th>
+            </tr>
+            <tr>
+                <td>#e6af2e</td>
+                <td>#a3320b</td>
+                <td>#6b0504</td>
+            </tr>
+          </table>
+          <table id="color-table-2">
+              <tr>
                 <th>H2 Heading</th>
                 <th>H3 Heading</th>
                 <th>Paragraph Text</th>
-            </tr>
-            <!--CSS HEX
-            --dark-jungle-green: #001514ff;
-            --white: #fbfffeff;
-            --blood-red: #6b0504ff;
-            --chinese-red: #a3320bff;
-            --goldenrod: #e6af2eff;
-            -->
-            <tr>
-                <td>#6b0504</td>
-                <td>#a3320b</td>
-                <td>#e6af2e</td>
-                <td>#6b0504</td>
+              </tr>
+              <tr>
                 <td>#6b0504</td>
                 <td>#6b0504</td>
                 <td>#001514</td>
-            </tr>
-            <tr>
-                <td>Sample</td>
-                <td>Sample</td>
-                <td>Sample</td>
-                <td>Sample</td>
-                <td>Sample</td>
-                <td>Sample</td>
-                <td>Sample</td>
-            </tr>
+              </tr>
           </table>
     </main>
     <footer>
-        <span id="year"></span>
-        <span id="updated"></span>
+        <div id="year"></div>
+        <div id="updated"></div>
     </footer>
     <script src="/lesson3/js/main.js"></script>
 </body>

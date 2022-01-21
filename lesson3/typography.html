@@ -16,53 +16,58 @@
             <h1>
                 Vernal Commerce Site Plan
             </h1>
-            <ul>
-                <li><a href="/lesson3/index.html">Home</a></li>
-                <li><a href="/lesson3/target-audience.html">Target Audience</a></li>
-                <li><a href="/lesson3/color-scheme.html">Color Scheme</a></li>
-                <li><a href="/lesson3/typography.html">Typography</a></li>
-            </ul>
+            <div class="head_nav">
+                <div><a href="/lesson3/index.html">Home</a></div>
+                <div><a href="/lesson3/target-audience.html">Target Audience</a></div>
+                <div><a href="/lesson3/color-scheme.html">Color Scheme</a></div>
+                <div><a href="/lesson3/typography.html">Typography</a></div>
+            </div>
         </nav>
     </header>
     <main>
-        <h2>Color Scheme</h2>
-        <table>
+        <h2>Typography</h2>
+        <!--
+        font-family: 'Gelasio', serif;
+        font-family: 'IBM Plex Sans', sans-serif;
+        -->
+        <table id="type-table-1">
             <tr>
-                <th>Site Header</th>
                 <th>Header Navigation</th>
                 <th>Footer Navigation</th>
                 <th>H1 Heading</th>
+            </tr>
+            <tr>
+                <td>IBM Plex Sans</td>
+                <td>IBM Plex Sans</td>
+                <td>Gelasio</td>
+            </tr>
+            <tr>
+                <td>30px</td>
+                <td>20px</td>
+                <td>40px</td>
+            </tr>
+          </table>
+          <table id="type-table-2">
+              <tr>
                 <th>H2 Heading</th>
                 <th>H3 Heading</th>
                 <th>Paragraph Text</th>
-            </tr>
-            <!--
-                font-family: 'Gelasio', serif;
-                font-family: 'IBM Plex Sans', sans-serif;
-            -->
-            <tr>
-                <td>Gelasio</td>
-                <td>IBM Plex Sans</td>
-                <td>IBM Plex Sans</td>
-                <td>Gelasio</td>
+              </tr>
+              <tr>
                 <td>Gelasio</td>
                 <td>Gelasio</td>
                 <td>IBM Plex Sans</td>
-            </tr>
-            <tr>
-                <td>40px</td>
-                <td>30px</td>
-                <td>20px</td>
-                <td>30px</td>
+              </tr>
+              <tr>
                 <td>25px</td>
                 <td>20px</td>
                 <td>16px</td>
-            </tr>
+              </tr>
           </table>
     </main>
     <footer>
-        <span id="year"></span>
-        <span id="updated"></span>
+        <div id="year"></div>
+        <div id="updated"></div>
     </footer>
     <script src="/lesson3/js/main.js"></script>
 </body>

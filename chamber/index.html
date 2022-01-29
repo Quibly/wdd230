@@ -9,11 +9,65 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gelasio&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div>
+            <img src="images/rsz_nature_outdoors_circular_line_illustration_travel_logo_1.webp" alt="Vernal Chamber Logo">
+        </div>
+        <div>
+            <h1>Vernal</h1>
+            <p>Chamber of Commerce</p>
+        </div>
+        <div>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <nav>
+            <!--Must have 4 page links and 2 social media external links
+                The menu starts with hamburger in small and medium views and is visible in large
+                Menu must be responsive to user behavior and toggle between showing none to all menu
+            -->
+            <button id="menuBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <date></date>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <!--logo, contact info, map link, base footer w/copyright year powered by js,
+            site name, my name, "WDD 230 Project", last mod date powered by js
+        -->
+        <section>
+            <div><img src="images/rsz_nature_outdoors_circular_line_illustration_travel_logo_1.webp" alt="Vernal Chamber Logo"></div>
+            <div>
+                <p><strong>Vernal Chamber of Commerce</strong></p>
+                <p>134 West Main Street<br>Vernal, Utah 84078</p>
+            </div>
+            <div>
+                <p>vchambermgr@easilink.com<br>+1 (435) 789-1352</p>
+            </div>
+            <div><a href="https://goo.gl/maps/3VmKfE9M1LiJoffh8">📍 Location Map</a></div>
+        </section>
+        <section>
+            <div id="copyright"></div>
+            <div>Adam Dutson</div>
+            <div>WDD 230 Project</div>
+            <div id="lastModified"></div>
+        </section>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>

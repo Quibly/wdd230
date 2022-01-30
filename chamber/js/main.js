@@ -1,7 +1,7 @@
 const datefield = document.querySelector("#date");
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(now);
-datefield.innerHTML = `<em>${fulldate}</em>`;
+datefield.innerHTML = `${fulldate}`;
 
 document.querySelector("#lastModified").textContent = `Last Modification: ${document.lastModified}`;
 

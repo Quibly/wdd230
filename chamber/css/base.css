@@ -4,35 +4,98 @@ font-family: 'IBM Plex Sans', sans-serif;
 */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+header {
+    background-color: #6b0504;
+    color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+#headerLogo img {
+    width: 100%;
+    max-width: 100px;
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#headSec1 {
+    margin-top: 10px;
+}
+
+#headerTitle {
+    flex-basis: 40%;
+}
+
+#headerLogo {
+    width: 100px;
+}
+
+#date {
+    border: 1px solid #e6af2e;
+    background-color: #a3320b;
+    padding: 10px;
+    margin: 20px;
+}
+
+nav {
+    border: 1px solid #e6af2e;
+}
+
+#headerLogo img, #footerLogo img, header div a{
+    border-radius: 50%;
+    background-color: white;
+}
+
+header div a{
+    text-decoration: none;
+}
+
+.fa-facebook, .fa-instagram{
+    width: 35px;
+    text-align: center;
+    padding: 2%;
+    margin:5px;
+}
+
 nav button {
     margin: .2rem 2vw;
     background: transparent;
     border: none;
-    font-size: 2rem;
-    color: #555;
+    font-size: 1.5rem;
+    color: #e6af2e;
 }
 
 nav {
-    background-color: #eee;
+    background-color: #6b0504;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    background-color: #e6af2e;
 }
 
 nav ul li a {
     display: block;
     padding: .8rem 2vw;
     text-decoration: none;
-    color: #333;
+    color: black;
     border-top: 1px solid rgba(0,0,0,0.5);
 
 }
 
 nav ul li a:hover {
-    background-color: rgba(0,0,0,0.3);
+    background-color: #a3320b;
+    color: white;
 }
 
 nav ul {
@@ -41,6 +104,9 @@ nav ul {
 
 nav ul.open {
     display: block;
+    position: absolute;
+    right: 5%;
+    border: 1px solid #6b0504;
 }
 
 #menuBtn span:nth-child(1) {
@@ -57,4 +123,142 @@ nav ul.open {
 
 #menuBtn.open span:nth-child(2) {
     display: block;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #6b0504;
+    color: white;
+    padding:20px;
+}
+
+#footerSect1 {
+    display: block;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#footerLogo {
+    max-width: 150px;
+    margin: auto;  
+}
+
+#footerLogo img {
+    width: 100%;
+    max-width: 150px;
+}
+
+#footerBlock2 div a {
+    padding:5px;
+}
+
+#footerBlock2 div a:link{
+    text-decoration: none;
+    color: white;
+}
+
+#footerBlock2 div a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+#footerBlock2 div a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: #e6af2e;
+}
+
+#footerBlock2 div a:active{
+    text-decoration: none;
+    color: white;
+}
+
+#footerSect2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+    padding:10px;
+    border-top: 1px solid #e6af2e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    margin: auto;
+}
+
+#spotlightSect, #spotlightSect div {
+    background-color: #e6af2e;
+    border: 1px solid #a3320b;
+}
+
+main div {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    justify-content: center;
+}
+
+#mainSect1 {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+#mainSect1 section {
+    background-color: #e6af2e;
+    border: 1px solid #a3320b;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+#mainSect2 {
+    padding: 0px;
+}
+
+#mainSect2 section {
+    background-color: #e6af2e;
+    border: 1px solid #a3320b;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#newsSect {
+    margin-top: 10px;
+}
+
+#spotlightSect {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#spotlightSect div {
+    width:95%;
+    height: 150px;
+    padding: 10px;
+}
+
+#joinSect {
+    display: none;
+}
+
+#spotlightSect div:nth-child(3) {
+    display: none;
+}
+
+#newsSectMedium {
+    display: none;
 }

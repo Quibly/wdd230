@@ -16,54 +16,74 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="images/rsz_nature_outdoors_circular_line_illustration_travel_logo_1.webp" alt="Vernal Chamber Logo">
-        </div>
-        <div>
-            <h1>Vernal</h1>
-            <p>Chamber of Commerce</p>
-        </div>
-        <div>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-        </div>
-        <nav>
-            <!--Must have 4 page links and 2 social media external links
-                The menu starts with hamburger in small and medium views and is visible in large
-                Menu must be responsive to user behavior and toggle between showing none to all menu
-            -->
-            <button id="menuBtn"><span>&#9776;</span><span>X</span></button>
-            <ul id="primaryNav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <date></date>
+        <section id="headSec1">
+            <div id="headerLogo">
+                <img src="images/rsz_nature_outdoors_circular_line_illustration_travel_logo_1.webp" alt="Vernal Chamber Logo">
+            </div>
+            <div id="headerTitle">
+                <h1>Vernal</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/Vernal-Area-Chamber-of-Commerce-251700434841196/" class="fa fa-facebook fa-2x"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram fa-2x"></a>
+            </div>
+            <nav>
+                <!--Must have 4 page links and 2 social media external links
+                    The menu starts with hamburger in small and medium views and is visible in large
+                    Menu must be responsive to user behavior and toggle between showing none to all menu
+                -->
+                <button id="menuBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="primaryNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="date"></section>
     </header>
     <main>
-        
+        <div id="mainSect1">
+            <section>Hero with site name and call to action</section>
+            <section id="newsSectMedium">News Release</section>
+        </div>
+        <div id="mainSect2">
+            <section>Event</section>
+            <section>Weather</section>
+            <section id="joinSect">Join</section>
+            <section id="newsSectSmall">News Release</section>
+        </div>
+        <div id="spotlightSect">
+            <div>Spotlight 1</div>
+            <div>Spotlight 2</div>
+            <div>Spotlight 3</div>
+        </div>
     </main>
     <footer>
         <!--logo, contact info, map link, base footer w/copyright year powered by js,
             site name, my name, "WDD 230 Project", last mod date powered by js
         -->
-        <section>
-            <div><img src="images/rsz_nature_outdoors_circular_line_illustration_travel_logo_1.webp" alt="Vernal Chamber Logo"></div>
-            <div>
-                <p><strong>Vernal Chamber of Commerce</strong></p>
-                <p>134 West Main Street<br>Vernal, Utah 84078</p>
+        <section id="footerSect1">
+            <div id="footerBlock1">
+                <div id="footerLogo"><img src="images/rsz_nature_outdoors_circular_line_illustration_travel_logo_1.webp" alt="Vernal Chamber Logo"></div>
+                <div>
+                    <p><strong>Vernal Chamber of Commerce</strong></p>
+                    <p>134 West Main Street<br>Vernal, Utah 84078</p>
+                </div>
             </div>
-            <div>
-                <p>vchambermgr@easilink.com<br>+1 (435) 789-1352</p>
+            <div id="footerBlock2">
+                <div>
+                    <p>vchambermgr@easilink.com<br>+1 (435) 789-1352</p>
+                </div>
+                <div><a href="https://goo.gl/maps/3VmKfE9M1LiJoffh8">📍 Location Map</a></div>
             </div>
-            <div><a href="https://goo.gl/maps/3VmKfE9M1LiJoffh8">📍 Location Map</a></div>
         </section>
-        <section>
+        <section id="footerSect2">
             <div id="copyright"></div>
-            <div>Adam Dutson</div>
+            <div><strong>Adam Dutson</strong></div>
             <div>WDD 230 Project</div>
             <div id="lastModified"></div>
         </section>

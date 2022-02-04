@@ -63,6 +63,12 @@ li {
 	margin-bottom: 0.5rem;
 }
 
+.list button:hover {
+	background-color: rgb(27, 192, 68);
+}
+
+
+
 @media only screen and (min-width: 32.5em) {
 	h1 {
 		font-size: 2rem;

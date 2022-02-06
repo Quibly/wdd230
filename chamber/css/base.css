@@ -14,7 +14,40 @@ header {
     justify-content: space-around;
 }
 
-h1 {
+#chamberbanner {
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 20px;
+    width:90%;
+    justify-content: space-around;
+    align-self: center;
+    padding:30px;
+    font-size: 1.5em;
+    text-align: center;
+    height: auto;
+    border: 5px solid black;
+}
+
+#chamberbanner.bannerClosed {
+    display: none;
+}
+
+#bannerBtn {
+    background-color: #6b0504;
+}
+
+#bannerBtn:hover {
+    background-color:#a3320b;
+}
+
+#bannerBtn:after {
+    content: "\00d7";
+    font-size: 1.5em;
+    color: white;
+}
+
+h1, #chamberbanner p {
     font-family: 'Gelasio', serif;
 }
 
@@ -40,10 +73,12 @@ header section {
 
 #headerTitle {
     flex-basis: 40%;
+    padding: 10px;
 }
 
 #headerLogo {
     width: 100px;
+    margin-left: 20px;
 }
 
 #date {
@@ -78,6 +113,11 @@ nav {
     border-radius: 50%;
     height: 47px;
     width: 47px;
+}
+
+#socialicons a:hover {
+    border: 5px solid #e6af2e;
+    border-radius: 10px;
 }
 
 .socialicon {
@@ -245,6 +285,45 @@ main div {
     padding: 10px;
 }
 
+#mainSect1 section h2, #mainSect1 section p {
+    padding: 2px;
+    margin:0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#mainSect1 section p {
+    font-size: 1em;
+}
+
+#mainSect1 section h2 {
+    font-size: 30px;
+}
+
+#mainSect1 section:nth-child(1) {
+    background-image: url('/chamber/images/rsz_river.webp');
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#mainSect1 section:nth-child(1) h2 {
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+    align-self: flex-start;
+}
+
+#mainSect1 section:nth-child(1) button {
+    background-color: #a3320b;
+    color: white;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
 #mainSect2 {
     padding: 0px;
 }
@@ -258,8 +337,42 @@ main div {
     margin-top: 10px;
 }
 
+#mainSect2 section h2, #mainSect2 section p {
+    padding: 2px;
+    margin:0;
+    font-size: 1em;
+    overflow: hidden;
+    text-align: center;
+}
+
+#mainSect2 section:nth-child(1) h2, #newsSectSmall h2, #newsSectMedium h2 {
+    font-size: 20px;
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+}
+
 #newsSect {
     margin-top: 10px;
+}
+
+#joinSect {
+    text-align: center;
+    text-justify: center;
+}
+
+#joinSect button {
+    background-color: #a3320b;
+    color: white;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+#joinSect button:hover, #mainSect1 section:nth-child(1) button:hover {
+    background-color: #6b0504;
 }
 
 #spotlightSect {
@@ -275,7 +388,28 @@ main div {
 #spotlightSect div {
     width:95%;
     height: 150px;
-    padding: 10px;
+    padding: 5px;
+    margin:0px;
+    text-align: center;
+}
+
+#spotlightSect div h2 {
+    font-size: 18px;
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+}
+
+#spotlightSect div p:nth-child(1) {
+    color: black;
+}
+
+#spotlightSect div p:nth-child(2) {
+    color: black;
+    border-top: 1px solid #6b0504;
+    font-size: 14px;
 }
 
 #joinSect {

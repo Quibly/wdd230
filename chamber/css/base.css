@@ -301,7 +301,7 @@ main div {
 }
 
 #mainSect1 section:nth-child(1) {
-    background-image: url('/chamber/images/rsz_river.webp');
+    background-image: url('/chamber/images/riverSkinnyEdit.webp');
     font-size: 2em;
     display: flex;
     flex-direction: column;

@@ -301,7 +301,7 @@ main div {
 }
 
 #mainSect1 section:nth-child(1) {
-    background-image: url('/chamber/images/riverSkinnyEdit.webp');
+    background-image: url('https://quibly.github.io/wdd230/chamber/images/riverSkinnyEdit.webp');
     font-size: 2em;
     display: flex;
     flex-direction: column;

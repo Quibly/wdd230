@@ -354,6 +354,19 @@ main div {
                 -2px -2px 0 white;
 }
 
+#mainSect2 section:nth-child(2) h2 {
+    font-size: 20px;
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+}
+
+#mainSect2 section:nth-child(2) p {
+    color: black;
+}
+
 #newsSect {
     margin-top: 10px;
 }
@@ -394,7 +407,7 @@ main div {
 
 #spotlightSect div h2 {
     font-size: 18px;
-    color:#a3320b;
+    color: black;
     text-shadow: -2px 2px 0 white,
                 2px 2px 0 white,
                 2px -2px 0 white,
@@ -408,7 +421,7 @@ main div {
 #spotlightSect div p:nth-child(2) {
     color: black;
     border-top: 1px solid #6b0504;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #joinSect {
@@ -422,3 +435,4 @@ main div {
 #newsSectMedium {
     display: none;
 }
+

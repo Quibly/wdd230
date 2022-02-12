@@ -59,10 +59,6 @@
         border:none;
     }
 
-    #joinSect {
-        height: unset;
-    }
-
     #headSec1 nav ul li {
         background-color: #a3320b;
         border: 1px solid #e6af2e;
@@ -82,84 +78,59 @@
         color: black;
     }
 
-    /* #headSec1 div:nth-child(3) {
-        order: 4;
-    } */
-    
     main {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 600px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
-
-    main div {
-        margin: 5px;
-    }
-
-    #mainSect1 {
-        flex: 2;
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        margin-top: 5px;
-    }
-
-    #mainSect1 section:nth-child(1) {
-        height: 310px;
-    }
-
-    #mainSect2 {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        order: 1;
-    }
-
-    #mainSect2 section:nth-child(1) {
-        order: 1;
-        margin: 0px;
-        flex-basis: unset;
-        margin-bottom: 10px;
-    }
-
-    #mainSect2 section:nth-child(2) {
-        order: 2;
-        margin: 0px;
-        flex-basis: unset;
-        margin-bottom: 10px;
-    }
-
-    #mainSect2 section:nth-child(3) {
-        order: 3;
-        margin: 0px;
-    }
-
-    #spotlightSect {
-        flex: 1;
-        order: 3;
-        display: flex;
-        flex-direction: column;
-        margin-top: 0px;
-    }
-
-    #spotlightSect div:nth-child(1) {
-        order: 1;
-        margin: 0px;
-    }
-
-    #spotlightSect div:nth-child(2) {
-        order: 2;
-        margin: 0px;
-    }
-
-    #spotlightSect div:nth-child(3) {
-        order: 3;
-        margin: 0px;
-        display: block;
-    }
-
     
-
-
+    #hero {
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
+    
+    #news {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    
+    #event {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    
+    #weather {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    #join {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    
+    #spotlights {
+        grid-row: 1/4;
+        grid-column: 3/4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding:10px;
+    }
+    
+    #spot1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    
+    #spot2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    
+    #spot3 {
+        display: unset;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
 }

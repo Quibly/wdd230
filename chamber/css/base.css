@@ -88,10 +88,6 @@ header section {
     margin: 20px;
 }
 
-nav {
-    border: 1px solid #e6af2e;
-}
-
 #headerLogo img, #footerLogo img {
     border-radius: 50%;
     background-color: white;
@@ -132,6 +128,11 @@ nav {
     width:100%;
 }
 
+nav {
+    border: 1px solid #e6af2e;
+    background-color: #6b0504;
+}
+
 nav button {
     margin: .2rem 2vw;
     background: transparent;
@@ -140,15 +141,12 @@ nav button {
     color: #e6af2e;
 }
 
-nav {
-    background-color: #6b0504;
-}
-
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: #e6af2e;
+    display:none;
 }
 
 nav ul li a {
@@ -163,10 +161,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #a3320b;
     color: white;
-}
-
-nav ul {
-    display:none;
 }
 
 nav ul.open {
@@ -191,7 +185,8 @@ nav ul.open {
 #menuBtn.open span:nth-child(2) {
     display: block;
 }
-
+/* Footer */
+/* ----------------------------------------------------------------- */
 footer {
     display: flex;
     flex-direction: column;
@@ -252,130 +247,95 @@ footer {
     border-top: 1px solid #e6af2e;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    align-items: center;
-    margin: auto;
-}
+/* Main Body */
+/* ------------------------------------------------------ */
 
-#spotlightSect, #spotlightSect div {
-    background-color: #e6af2e;
-    border: 1px solid #a3320b;
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+    width: 95%;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: auto;
+    padding: 10px;
 }
 
 main div {
     width: 100%;
+    min-height: 150px;
     height: auto;
     text-align: left;
-    justify-content: center;
-}
-
-#mainSect1 {
-    padding: 0px;
-    margin-top: 10px;
-}
-
-#mainSect1 section {
     background-color: #e6af2e;
     border: 1px solid #a3320b;
-    width: 100%;
-    height: 150px;
     padding: 10px;
 }
 
-#mainSect1 section h2, #mainSect1 section p {
-    padding: 2px;
-    margin:0;
-    overflow: hidden;
+#news h2, #event h2, #weather h2, #spot1 h2, #spot2 h2, #spot3 h2 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #6b0504;
+}
+
+main div h2 {
+    text-align: center;
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+}
+
+main div p {
     text-align: center;
 }
 
-#mainSect1 section p {
-    font-size: 1em;
-}
-
-#mainSect1 section h2 {
-    font-size: 30px;
-}
-
-#mainSect1 section:nth-child(1) {
+#hero {
+    grid-row: 1/2;
     background-image: url('https://quibly.github.io/wdd230/chamber/images/riverSkinnyEdit.webp');
-    font-size: 2em;
+    font-size: 1.2em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#mainSect1 section:nth-child(1) h2 {
-    color:#a3320b;
-    text-shadow: -2px 2px 0 white,
-                2px 2px 0 white,
-                2px -2px 0 white,
-                -2px -2px 0 white;
+#hero h2 {
     align-self: flex-start;
+    margin-left: 2%;
 }
 
-#mainSect1 section:nth-child(1) button {
+#hero button {
     background-color: #a3320b;
     color: white;
     border-radius: 10px;
     align-self: flex-end;
-}
-
-#mainSect2 {
-    padding: 0px;
-}
-
-#mainSect2 section {
-    background-color: #e6af2e;
-    border: 1px solid #a3320b;
-    width: 100%;
-    height: 150px;
     padding: 10px;
-    margin-top: 10px;
 }
 
-#mainSect2 section h2, #mainSect2 section p {
-    padding: 2px;
-    margin:0;
-    font-size: 1em;
-    overflow: hidden;
+#hero button:hover {
+    color: white;
+    background-color: #6b0504;
+    cursor:pointer;
+}
+
+#news {
+    grid-row: 4/5;
+}
+
+#event {
+    grid-row: 2/3;
+}
+
+#weather {
+    grid-row: 3/4;
+}
+
+#join {
+    display: none;
     text-align: center;
 }
 
-#mainSect2 section:nth-child(1) h2, #newsSectSmall h2, #newsSectMedium h2 {
-    font-size: 20px;
-    color:#a3320b;
-    text-shadow: -2px 2px 0 white,
-                2px 2px 0 white,
-                2px -2px 0 white,
-                -2px -2px 0 white;
-}
-
-#mainSect2 section:nth-child(2) h2 {
-    font-size: 20px;
-    color:#a3320b;
-    text-shadow: -2px 2px 0 white,
-                2px 2px 0 white,
-                2px -2px 0 white,
-                -2px -2px 0 white;
-}
-
-#mainSect2 section:nth-child(2) p {
-    color: black;
-}
-
-#newsSect {
-    margin-top: 10px;
-}
-
-#joinSect {
-    text-align: center;
-}
-
-#joinSect button {
+#join button {
     background-color: #a3320b;
     color: white;
     width: 90%;
@@ -383,56 +343,28 @@ main div {
     font-size: 1.5em;
 }
 
-#joinSect button:hover, #mainSect1 section:nth-child(1) button:hover {
+#join button:hover {
+    color: white;
     background-color: #6b0504;
+    cursor:pointer;
 }
 
-#spotlightSect {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
+#spotlights {
+    grid-row: 5/7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding:10px;
 }
 
-#spotlightSect div {
-    width:95%;
-    height: 150px;
-    padding: 5px;
-    margin:0px;
-    text-align: center;
+#spot1 {
+    grid-row: 1/2;
 }
 
-#spotlightSect div h2 {
-    font-size: 18px;
-    color: black;
-    text-shadow: -2px 2px 0 white,
-                2px 2px 0 white,
-                2px -2px 0 white,
-                -2px -2px 0 white;
+#spot2 {
+    grid-row: 2/3;
 }
 
-#spotlightSect div p:nth-child(1) {
-    color: black;
+#spot3 {
+    display:none;
 }
-
-#spotlightSect div p:nth-child(2) {
-    color: black;
-    border-top: 1px solid #6b0504;
-    font-size: 16px;
-}
-
-#joinSect {
-    display: none;
-}
-
-#spotlightSect div:nth-child(3) {
-    display: none;
-}
-
-#newsSectMedium {
-    display: none;
-}
-

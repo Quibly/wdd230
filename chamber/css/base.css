@@ -60,7 +60,7 @@ h2, p, div, a, section, span {
     max-width: 100px;
 }
 
-header section {
+header section, #date {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -293,31 +293,28 @@ main div p {
 #hero {
     grid-row: 1/2;
     font-size: 1.2em;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #hero picture {
     height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     position: relative;
     overflow: hidden;
+    grid-row: 1/4;
+    grid-column: 1/3;
 }
 
 #hero picture img {
     height: 100%;
-    grid-row: 1/4;
-    grid-column: 1/3;
     align-self: center;
     z-index: 0;
     margin-left: 50%;
     transform: translateX(-50%);
 }
 
-#hero picture h2 {
+#hero h2 {
     align-self: flex-start;
     margin: 2% 0 0 2%;
     grid-row: 1/2;
@@ -326,7 +323,7 @@ main div p {
     justify-self: start;
 }
 
-#hero picture button {
+#hero button {
     background-color: #a3320b;
     color: white;
     border-radius: 10px;

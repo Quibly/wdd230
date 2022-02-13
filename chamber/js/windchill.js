@@ -22,7 +22,7 @@ function displayWeather(data) {
     let speed = weatherString.wind.speed;
     let windChill = 35.74 + (0.6215 * temperature) - (35.75 * (speed ** 0.16)) + (0.4275 * temperature * (speed ** 0.16));
     let iconValue = weatherString.weather[0].icon;
-    let iconImageURL =  `http://openweathermap.org/img/wn/${iconValue}@2x.png`;
+    let iconImageURL =  `https://openweathermap.org/img/wn/${iconValue}@2x.png`;
     let iconImage = new Image();
     iconImage.src = iconImageURL;
     weatherIcon.appendChild(iconImage);

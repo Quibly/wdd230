@@ -49,8 +49,13 @@
     </header>
     <main>
         <div id="hero">
-            <h2>Welcome to the Vernal Chamber</h2>
-            <button type="button">Join the Chamber</button>
+            <picture>
+                <source media="(max-width: 549px)" srcset="images/wdd230org_480.webp">
+                <source media="(max-width: 899px)" srcset="images/wdd230org_825.webp">
+                <img src="images/wdd230org_1600.webp" alt="Picture of a business meeting.">
+                <h2>Welcome to the Vernal Chamber</h2>
+                <button type="button">Join the Chamber</button>
+            </picture>
         </div>
         <div id="news">
             <h2>News Release</h2>
@@ -63,7 +68,11 @@
         </div>
         <div id="weather">
             <h2>Weather</h2>
-            <p>Currently 27 Degrees</p>
+            <span id="weatherIcon"></span>
+            <span id="weatherTemp"></span>
+            <span id="weatherCondition"></span>
+            <span id="weatherWindSpeed"></span>
+            <span id="weatherWindChill"></span>
         </div>
         <div id="join">
             <button type="button">Join Us!</button>
@@ -111,5 +120,6 @@
         </section>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>

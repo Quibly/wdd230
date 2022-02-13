@@ -25,6 +25,8 @@ function displayWeather(data) {
     let iconImageURL =  `https://openweathermap.org/img/wn/${iconValue}@2x.png`;
     let iconImage = new Image();
     iconImage.setAttribute('alt', 'Weather Icon showing weather conditions');
+    iconImage.setAttribute('width', '100');
+    iconImage.setAttribute('height', '100');
     iconImage.src = iconImageURL;
     weatherIcon.appendChild(iconImage);
     weatherTemp.textContent = `${weatherString.main.temp.toFixed(0)}\u00B0 F`;

@@ -1,11 +1,13 @@
 let todaysDate = new Date();
 todaysDate = Date.now();
+console.log(todaysDate);
 let lastVisitDate = window.localStorage.getItem('lastVisit');
 const visitDetails = document.querySelector('#visitDetails');
+console.log(lastVisitDate);
 
 if(lastVisitDate == null) {
-window.localStorage.setItem('lastVisit',todaysDate);
-visitDetails.textContent = `This is your first visit!`;
+    window.localStorage.setItem('lastVisit',todaysDate);
+    visitDetails.textContent = `This is your first visit!`;
 } else {
     let sinceLast = parseInt(todaysDate) - parseInt(lastVisitDate);
     sinceLast = Math.floor((sinceLast)/(1000*60*60*24));

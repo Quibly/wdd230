@@ -11,7 +11,7 @@ if(lastVisitDate == null) {
 } else {
     let sinceLast = parseInt(todaysDate) - parseInt(lastVisitDate);
     sinceLast = Math.floor((sinceLast)/(1000*60*60*24));
-    Window.localStorage.setItem('lastVisit', todaysDate);
+    window.localStorage.setItem('lastVisit', todaysDate);
     if(sinceLast < 1) {
         visitDetails.textContent = `This is the first day you've visited our site!`
     } else {

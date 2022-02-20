@@ -158,7 +158,6 @@ nav ul li a {
     text-decoration: none;
     color: black;
     border-top: 1px solid rgba(0,0,0,0.5);
-
 }
 
 nav ul li a:hover {
@@ -445,4 +444,92 @@ main div p {
 
 #spot3 {
     display:none;
+}
+
+picture {
+    display: block;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+img {
+filter: blur(0em);
+transition: filter 0.5s;
+}
+
+/*-----------------------------------------------*/
+/*Discover Page */
+
+#discoverMain {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#discoverMain h1 {
+    grid-column: 1/3;
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+    background-color: #e6af2e;
+    padding: 10px;
+    border: 1px solid #6b0504;
+    margin: 0px;
+}
+
+#cityGallery {
+    grid-column: 2/3;
+    border: 2px solid #6b0504;
+    background-color: #e6af2e;
+    align-self: flex-start;
+}
+
+#cityGallery h2 {
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+}
+
+#cityGallery figure a {
+    margin: 0px;
+}
+
+#cityGallery figure a picture {
+    margin: 5px;
+}
+
+#cityGallery figure {
+    border: 1px solid #6b0504;
+    background-color: #e6af2e;
+    margin: 5px;
+}
+
+#cityGallery figure p {
+    border-top: 1px solid #6b0504;
+    margin: 20px;
+}
+
+#cityData {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-self: flex-start;
+    margin:0;
+}
+
+#cityData div{
+    align-self: start;
+    margin: 0px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #6b0504;
 }

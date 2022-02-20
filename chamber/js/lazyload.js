@@ -2,7 +2,6 @@ const items = document.querySelectorAll("[data-src]");
 
 function loadImage(img) {
     const src = img.getAttribute("data-src");
-    const srcset = img.getAttribute("data-srcset")
     if(!src) {
         return;
     }

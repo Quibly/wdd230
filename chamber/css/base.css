@@ -513,10 +513,6 @@ transition: filter 0.5s;
     max-width: 200px;
 }
 
-#cityGallery figure a picture img:hover {
-    box-shadow: 0 0 50px #6b0504;
-}
-
 #cityGallery figure {
     border: 1px solid #6b0504;
     background-color: #e6af2e;

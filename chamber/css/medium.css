@@ -104,4 +104,8 @@
         border-right: 1px solid white;
         border-left: 1px solid white;
     }
+
+    #cityGallery figure a picture img:hover {
+        box-shadow: 0 0 50px #6b0504;
+    }
 }

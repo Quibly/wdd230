@@ -556,3 +556,135 @@ transition: filter 0.5s;
                 2px -2px 0 white,
                 -2px -2px 0 white;
 }
+
+
+/*----------- Join Page -------------*/
+
+#joinMain {
+    display: block;
+    font-family: 'Gelasio', serif;
+    box-sizing: unset;
+}
+
+#joinMain h2, #joinMain h3 {
+    font-size: 2rem;
+    font-family: 'Gelasio', serif;
+    border: 2px solid #6b0504;
+    padding: 10px;
+    background-color: #e6af2e;
+    text-align: center;
+    color: #6b0504;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+}
+
+#joinMain h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 45%;
+    min-width: 300px;
+}
+
+#joinMain legend {
+    background-color: #a3320b;
+    border: 2px solid #6b0504;
+    padding: .3rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#joinMain form fieldset label.top input {
+    display: block;
+}
+
+#joinMain form fieldset label.radio {
+    display: block;
+    margin: 5px 0 5px 1%;
+}
+
+#joinMain form fieldset label.top {
+    margin: 10px 0 10px 0;
+    padding-top: 1rem;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 2px solid #6b0504;
+    padding: .5rem 2%;
+    background-color: #e6af2e;
+}
+
+#membershipHead {
+    display: block;
+    width: unset;
+    min-height: unset;
+    height: unset;
+    padding: unset;
+    font-family: 'Gelasio', serif;
+    background-color: unset;
+    border: unset;
+    border-bottom: 1px solid black;
+    width: 40%;
+    min-width: 265px;
+}
+
+input {
+    height: 44px;
+    width: 40%;
+    min-width: 265px;
+    margin-bottom: 1.2rem;
+    border-style: inset;
+}
+
+.radio {
+    margin-left: 1%;
+    text-justify: center;
+    padding: 2% 0;
+}
+
+.radio input {
+    display: inline-block;
+    height: unset;
+    width: 15px;
+    min-width: unset;
+    margin-bottom: 0;
+}
+
+#gold input {
+    margin-bottom: 1.2rem;
+}
+
+textarea {
+    display: block;
+    width: 40%;
+    height: 6rem;
+    min-width: 265px;
+}
+
+#dateHidden {
+    display: none;
+}
+
+#applicationBtn {
+    background-color: #a3320b;
+    color: white;
+    padding: 5px;
+    font-size: 1.5rem;
+    width: 40%;
+    min-width: 265px;
+    margin-left: 10px;
+}
+
+#businessDescription input {
+    height: 100px;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}

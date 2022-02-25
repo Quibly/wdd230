@@ -53,20 +53,20 @@
                 <legend>Personal Information</legend>
                 <label class="top">First Name<input type="text" name="fname" required autofocus></label>
                 <label class="top">Last Name<input type="text" name="lname" required></label>
-                <label class="top">Business Position<input type="text" name="position" pattern="[A-Za-z -]{7,}"></label>
+                <label class="top">Business Position<input type="text" name="position" title="Your professional business title goes here" pattern="[A-Za-z -]{7,}"></label>
                 <label class="top">Email Address<input type="email" name="email" placeholder="emailaddress@email.com" required></label>
                 <label class="top">Cell Phone Number<input type="tel" name="phoneNumber" required></label>
             </fieldset>
             <fieldset>
                 <legend>Business Information</legend>
-                <label class="top">Business Name<input type="text" name="businessName" required></label>    
+                <label class="top">Business Name<input type="text" name="businessName" title="Your Business Name goes here" required></label>    
                 <div id="membershipHead">Membership Level</div>
                 <label class="radio"><input type="radio" name="membership" value="np"> NP Membership (Non Profit Organizations)</label>
                 <label class="radio"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
                 <label class="radio"><input type="radio" name="membership" value="silver"> Silver Membership</label>
                 <label class="radio" id="gold"><input type="radio" name="membership" value="gold"> Gold Membership</label>
                 <label class="top" id="businessDescription">Business Description<textarea name="businessDescription"></textarea></label>
-                <label id="dateHidden"><input type="date" name="date" value="">Date</label>              
+                <input id="dateHidden" type="text" name="date">           
             </fieldset>
             <input type="submit" value="Apply for Membership" id="applicationBtn">
         </form>

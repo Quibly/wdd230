@@ -566,7 +566,7 @@ transition: filter 0.5s;
     box-sizing: unset;
 }
 
-#joinMain h2, #joinMain h3 {
+#joinMain h2, #joinMain h3, #thankYou {
     font-size: 2rem;
     font-family: 'Gelasio', serif;
     border: 2px solid #6b0504;

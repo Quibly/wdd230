@@ -20,13 +20,17 @@ function displayProphets(prophet) {
     let portrait = document.createElement('img');
     let text;
     let order = parseInt(prophet.order);
+    console.log(order)
     switch (order) {
         case 1:
             text = 'st';
+            break;
         case 2:
             text = 'nd';
+            break;
         case 3:
             text = 'rd';
+            break;
         default:
             text = 'th';
     }

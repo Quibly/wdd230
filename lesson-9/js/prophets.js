@@ -6,7 +6,6 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
     const prophets = jsonObject['prophets'];
     prophets.forEach(displayProphets);
   });
@@ -20,7 +19,6 @@ function displayProphets(prophet) {
     let portrait = document.createElement('img');
     let text;
     let order = parseInt(prophet.order);
-    console.log(order)
     switch (order) {
         case 1:
             text = 'st';

@@ -16,11 +16,9 @@ function checkSize() {
 
 function toggleGrid() {
         listGridId.setAttribute('id', '');
-        
 }
 function toggleList() {
         listGridId.setAttribute('id', 'listView');
-        
 }
 
 checkSize();

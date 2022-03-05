@@ -688,10 +688,42 @@ form label.top input:required:valid {
 
 /*-------------Directory Page----------------*/
 
-#gridBtn {
-    background-image: "https://quibly.github.io/wdd/chamber/images/apps-grid.png";
+#viewBtns {
+    border: none;
+    background-color: unset;
+    display: flex;
+    flex-direction: row;
 }
 
-#listBtn {
-    background-image: "https://quibly.github.io/wdd/chamber/images/list-round-bullet.png";
+#gridBtn, #listBtn {
+    background-color: #e6af2e;
+    margin: 2px;
 }
+
+#gridBtn:focus, #listBtn:focus {
+    background-color: #e6af2e;
+    outline: 5px solid #6b0504;
+}
+
+#gridBtn::selection, #listBtn::selection {
+    background-color: #e6af2e;
+    outline: 5px solid #6b0504;
+}
+
+#gridBtn:hover, #listBtn:hover {
+    background-color: #a3320b;
+}
+
+.listGridBtn {
+    width: 40px;
+    height: 40px;
+}
+
+.listGridBtn img {
+    width: 100%;
+}
+
+#directoryMain {
+    display: block;
+}
+

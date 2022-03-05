@@ -684,3 +684,14 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+
+/*-------------Directory Page----------------*/
+
+#gridBtn {
+    background-image: "https://quibly.github.io/wdd/chamber/images/apps-grid.png";
+}
+
+#listBtn {
+    background-image: "https://quibly.github.io/wdd/chamber/images/list-round-bullet.png";
+}

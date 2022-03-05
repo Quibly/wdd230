@@ -1,0 +1,98 @@
+[
+{
+    "Name": "Cafe Rio Mexican Grill",
+    "Address": "1205 W Highway 40, Vernal, UT 84078",
+    "Phone": "435-781-8100",
+    "Website": "https://www.caferio.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/cafeRio.png",
+    "LogoAlt": "Cafe Rio Logo - Cafe Rio Mexican Grill"
+},
+{
+    "Name": "Big O Tires",
+    "Address": "2045 W Highway 40, Vernal, UT 84078",
+    "Phone": "435-781-2446",
+    "Website": "https://www.bigotires.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/bigOTires.png",
+    "LogoAlt": "BigOTires Logo - Big O Tires"
+},
+{
+    "Name": "Game Stop",
+    "Address": "1820 W Highway 40, Ste E, Vernal, UT 84078",
+    "Phone": "435-781-2862",
+    "Website": "https://www.gamestop.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/gameStop.png",
+    "LogoAlt": "Game Stop Logo - Game Stop"
+},
+{
+    "Name": "Papa Johns Pizza",
+    "Address": "63 W Main St, Vernal, UT 84078",
+    "Phone": "435-789-8080",
+    "Website": "https://www.papajohns.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/papaJohns.png",
+    "LogoAlt": "Papa Johns Logo - Papa Johns Pizza"
+},
+{
+    "Name": "Taco Bell",
+    "Address": "898 W Highway 40, Vernal, UT 84078",
+    "Phone": "435-781-1812",
+    "Website": "https://www.tacobell.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/tacoBell.png",
+    "LogoAlt": "Taco Bell Logo - Taco Bell"
+},
+{
+    "Name": "Cold Stone Creamery",
+    "Address": "1820 W Highway 40, Ste K, Vernal, UT 84078",
+    "Phone": "435-781-6349",
+    "Website": "https://www.coldstonecreamery.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/coldStone.png",
+    "LogoAlt": "Cold Stone Logo - Cold Stone Creamery"
+},
+{
+    "Name": "Smiths",
+    "Address": "1080 W Highway 40, Vernal, UT 84078",
+    "Phone": "435-789-7135",
+    "Website": "https://www.smithsfoodanddrug.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/smiths.png",
+    "LogoAlt": "Smiths Logo - Smiths Food and Drug"
+},
+{
+    "Name": "Deseret Industries",
+    "Address": "1070 W Highway 40, Vernal, UT 84078",
+    "Phone": "435-789-7945",
+    "Website": "https://www.deseretindustries.org/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/dI.png",
+    "LogoAlt": "DI Logo - Deseret Industries"
+},
+{
+    "Name": "Comfort Inn",
+    "Address": "2500 W 1500 S, Vernal, UT 84078",
+    "Phone": "435-789-6066",
+    "Website": "https://www.choicehotels.com/comfort-inn",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/comfortInn.png",
+    "LogoAlt": "Comfort Inn Logo - Choice Hotels Comfort Inn"
+},
+{
+    "Name": "Great Clips",
+    "Address": "1180 W Highway 40, Vernal, UT 84078",
+    "Phone": "435-781-1110",
+    "Website": "https://www.greatclips.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/greatClips.png",
+    "LogoAlt": "Great Clips Logo - Great Clips"
+},
+{
+    "Name": "Little Caesars Pizza",
+    "Address": "1169 W Highway 40, Vernal, UT 84078",
+    "Phone": "435-781-0200",
+    "Website": "https://littlecaesars.com/en-us/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/littleCaesars.png",
+    "LogoAlt": "Little Caesars Logo - Little Caesars Pizza"
+},
+{
+    "Name": "Jimmy Johns",
+    "Address": "2175 W Highway 40, Vernal, UT 84078",
+    "Phone": "435-781-8900",
+    "Website": "https://www.jimmyjohns.com/",
+    "Logo": "https://quibly.github.io/wdd230/chamber/images/businessLogos/jimmyJohns.png",
+    "LogoAlt": "Jimmy Johns Logo - Jimmy Johns"
+}
+]

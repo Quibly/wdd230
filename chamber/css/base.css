@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 
 body {
-    min-width: 335px;
+    min-width: 400px;
 }
 
 header {
@@ -688,11 +688,29 @@ form label.top input:required:valid {
 
 /*-------------Directory Page----------------*/
 
+#directoryHeader {
+    font-family: 'Gelasio', serif;
+    text-align: center;
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+    background-color: #e6af2e;
+    padding: 10px;
+    border: 2px solid #6b0504;
+}
+
+.logoContainer {
+    background-color: white;
+}
+
 #viewBtns {
     border: none;
     background-color: unset;
     display: flex;
     flex-direction: row;
+    min-height: unset;
 }
 
 #gridBtn, #listBtn {
@@ -730,6 +748,9 @@ form label.top input:required:valid {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    justify-items: center;
+    background-color: #6b0504;
 }
 
 .cards div {
@@ -739,6 +760,11 @@ form label.top input:required:valid {
     align-items: center;
     text-align: center;
     background-color: white;
+    padding: 20px;
+}
+
+.cards div h2:nth-child(2) {
+    display: none;
 }
 
 .logoContainer {
@@ -758,13 +784,46 @@ form label.top input:required:valid {
 }
 
 .cards div a:visited {
-    color: blue;
+    color: purple;
 }
 
 .cards div a:hover {
-    color: blue;
+    color: white;
+    background-color: blue;
 }
 
 .cards div a:active {
-    color: blue;
+    color: white;
+    background-color: purple;
+}
+
+#listView {
+    display: block;
+}
+
+#listView div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#listView div a {
+    word-wrap: break-word;
+}
+
+#listView div h2:nth-child(1) {
+    display: none;
+}
+
+#listView div h2:nth-child(2) {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1rem;
+    color: black;
+    text-shadow: unset;
+    font-weight: unset;
+    display: unset;
+}
+
+#listView div:nth-child(odd) {
+    background-color:#e6af2e;
 }

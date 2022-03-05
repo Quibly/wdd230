@@ -727,11 +727,44 @@ form label.top input:required:valid {
     display: block;
 }
 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cards div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+.logoContainer {
+    max-width: 200px;
+}
+
 .logoContainer img{
     width: 100%;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.cards div p {
+    margin: 0;
+}
+
+.cards div a:link {
+    color: blue;
+}
+
+.cards div a:visited {
+    color: blue;
+}
+
+.cards div a:hover {
+    color: blue;
+}
+
+.cards div a:active {
+    color: blue;
 }

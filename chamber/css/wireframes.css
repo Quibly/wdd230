@@ -1,13 +1,14 @@
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4rem;
+    text-align: center;
 }
 
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
 }
 
-body {
+main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;

@@ -12,7 +12,6 @@ getJSON("https://api.openweathermap.org/data/2.5/weather?lat=40.45749307996542&l
 
 function displayWeather(data) {
     let weatherString = data;
-    console.dir(weatherString);
     let weatherIcon= document.querySelector('#weatherIcon');
     let weatherTemp= document.querySelector('#weatherTemp');
     let weatherCondition= document.querySelector('#weatherCondition');

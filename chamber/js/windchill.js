@@ -1,8 +1,3 @@
-// Api Key 7896a0abdc6f34148aad2107b8c89750
-// location (lat/long) 40.45749307996542, -109.52854471895078
-// Api URL api.openweathermap.org/data/2.5/weather?lat=40.45749307996542&lon=-109.52854471895078&appid=7896a0abdc6f34148aad2107b8c89750
-
-
 const getJSON = async url => {
     const response = await fetch(url);
     return response.json(); 

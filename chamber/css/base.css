@@ -471,6 +471,41 @@ main div p {
     display:none;
 }
 
+.logoContainerHome {
+    border: unset;
+    padding: unset;
+    min-height: unset;
+    height: 50px;
+    text-align: center;
+}
+
+.logoContainerHome img {
+    margin: auto;
+    height: 100%;
+}
+
+#spot1, #spot2, #spot3 {
+    text-align: center;
+}
+
+#spot1 a:link, #spot2 a:link, #spot3 a:link {
+    color: white;
+}
+
+#spot1 a:visited, #spot2 a:visited, #spot3 a:visited {
+    color: #6b0504;
+}
+
+#spot1 a:hover, #spot2 a:hover, #spot3 a:hover {
+    background-color: #a3320b;
+    color: white;
+}
+
+#spot1 a:active, #spot2 a:active, #spot3 a:active {
+    background-color: #a3320b;
+    color: #e6af2e;
+}
+
 picture {
     display: block;
 }

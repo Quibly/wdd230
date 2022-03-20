@@ -891,5 +891,13 @@ form label.top input:required:valid {
 /*------------Contact Page----------------*/
 
 #contactMain {
-    background-image: "https://quibly.github.io/wdd230/chamber/images/river.jpg";
+    width: 100%;
+    background-image: url("https://quibly.github.io/wdd230/chamber/images/river.webp");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+#contactMain form {
+
 }

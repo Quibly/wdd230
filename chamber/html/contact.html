@@ -42,7 +42,15 @@
         <div id="date"></div>
     </header>
     <main id="contactMain">
-        
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label class="top">Name *<input type="text" name="name" required autofocus></label>
+                <label class="top">Email Address *<input type="email" name="email" placeholder="emailaddress@email.com" required></label>
+                <label class="top">Question/Concern *<textarea name="businessDescription"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Send us your Questions/Concerns" id="contactBtn">
+        </form>
     </main>
     <footer>
         <div id="footerSect1">

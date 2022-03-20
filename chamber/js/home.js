@@ -8,7 +8,6 @@ fetch(businessURL)
         const businesses = jsonObject['businesses'];
         let newBusinesses = businesses.filter(topMembers);
         newBusinesses = shuffleArray(newBusinesses);
-        console.log(newBusinesses);
         selectTop3(newBusinesses);
     });
 

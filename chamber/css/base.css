@@ -891,13 +891,104 @@ form label.top input:required:valid {
 /*------------Contact Page----------------*/
 
 #contactMain {
+    display: block;
     width: 100%;
-    background-image: url("https://quibly.github.io/wdd230/chamber/images/river.webp");
+    background-image: url("../images/greenFlower.webp");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
+    font-family: 'Gelasio', serif;
 }
 
 #contactMain form {
+    display: block;
+    max-width: 450px;
+    margin: auto;
+}
 
+#contactMain form fieldset {
+    margin: 2rem 0;
+    border: 2px solid #6b0504;
+    padding: .5rem 2%;
+    background-color: #e6af2e;
+    min-width: 285px;
+}
+
+#contactMain form fieldset legend {
+    font-size: 1.2rem;
+    border: 2px solid #6b0504;
+    padding: 10px;
+    background-color: #a3320b;
+    color: white;
+}
+
+#contactMain form fieldset label.top input {
+    display: block;
+}
+
+#contactBtn {
+    background-color: #a3320b;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#contactMain section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #e6af2e;
+    border: 2px solid #6b0504;
+    text-align: center;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#contactMain section h2 {
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #6b0504;
+    width: 50%;
+    color:#a3320b;
+    text-shadow: -1px 1px 0 white,
+                1px 1px 0 white,
+                1px -1px 0 white,
+                -1px -1px 0 white;
+}
+
+#contactMain section p {
+    margin: 0;
+}
+
+#contactMain section iframe {
+    margin: auto;
+    align-self: end;
+    margin-top: 50px;
+}
+
+#contactMain h1 {
+    margin: 0;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    height: 80%;
+    text-align: center;
+    font-family: 'Gelasio', serif;
+    font-size: 2.8rem;
+    color:#a3320b;
+    text-shadow: -2px 2px 0 white,
+                2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+    background-color: #e6af2e;
+    padding: 20px;
+    border: 2px solid #6b0504;
+}
+
+#thankYouContact {
+    display: block;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

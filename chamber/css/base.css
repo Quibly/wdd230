@@ -737,7 +737,7 @@ textarea {
     margin-left: 10px;
 }
 
-form label.top input:required {
+form label.top input:required, textarea:required {
     border-left: red solid 6px;
 }
 

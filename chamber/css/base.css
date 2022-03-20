@@ -351,13 +351,9 @@ main div p {
     justify-self: start;
 }
 
-#hero button {
-    background-color: #a3320b;
-    color: white;
-    border-radius: 10px;
-    height: 50px;
+#hero a {
     width: 190px;
-    padding: 10px;
+    height: 50px;
     grid-row: 3/4;
     grid-column: 2/3;
     justify-self: end;
@@ -367,7 +363,14 @@ main div p {
     z-index: 1;
 }
 
-#hero button:hover {
+#hero a button {
+    background-color: #a3320b;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#hero a button:hover {
     color: white;
     background-color: #6b0504;
     cursor:pointer;
@@ -437,7 +440,11 @@ main div p {
     text-align: center;
 }
 
-#join button {
+#join a {
+    width: 90%;
+}
+
+#join a button {
     background-color: #a3320b;
     color: white;
     width: 90%;
@@ -445,7 +452,7 @@ main div p {
     font-size: 1.5em;
 }
 
-#join button:hover {
+#join a button:hover {
     color: white;
     background-color: #6b0504;
     cursor:pointer;

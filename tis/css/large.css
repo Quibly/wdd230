@@ -7,6 +7,39 @@
         font-size: 3rem;
     }
 
+    #navBtn {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0;
+    }
+
+    #navList.open, #navList {
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #595358;
+        padding: 5px;
+        width: 100%;
+        margin: 0;
+    }
+
+    #navList.open li, #navList li {
+        margin: auto;
+        padding: 10px;
+    }
+
+    #navBtn.open span:nth-child(1), #navBtn span:nth-child(1)  {
+        display: none;
+    }
+    
+    #navBtn.open span:nth-child(2), #navBtn span:nth-child(2) {
+        display: block;
+    }
+
     #footerSocial {
         padding: 0;
         width: 230px;

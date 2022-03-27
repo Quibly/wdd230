@@ -32,6 +32,7 @@ h3, h4, p, a, span {
 header {
     display: grid;
     grid-template-rows: 30px 1fr 50px;
+    margin-bottom: 30px;
 }
 
 #header {
@@ -185,6 +186,39 @@ header nav {
     background-color: #998FC7;
     border-radius: 10px;
 }
+
+/* ------------------------------------------------------------- */
+/* Home Main */
+
+#cardReservation {
+    width: 95%;
+    margin: auto;
+    max-width: 500px;
+    position: relative;
+}
+
+#cardReservation img {
+    
+    width: 100%;
+    border-radius: 50px;
+    border: 10px solid #595358;
+}
+
+#cardReservation button {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    height: 30px;
+    width: 80%;
+    background-color: #998FC7;
+    color: white;
+    border-radius: 10px;
+}
+
+#cardReservation button:hover {
+    background-color: #FF8484;
+}
+
 
 
 /* ------------------------------------------------------------------ */

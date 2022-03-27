@@ -1,0 +1,14 @@
+@media only screen and (min-width: 900px) {
+
+    /* ------------------------------------------------------- */
+    /* Home */
+
+    #header h1 {
+        font-size: 3rem;
+    }
+
+    #footerSocial {
+        padding: 0;
+        width: 230px;
+    }
+}

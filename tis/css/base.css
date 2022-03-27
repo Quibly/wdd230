@@ -87,6 +87,8 @@ header nav {
     align-items: center;
     margin-right: 20px;
     border: 1px solid #595358;
+    position: relative;
+    z-index: 2;
 }
 
 #navList li a {
@@ -98,24 +100,16 @@ header nav {
     text-decoration: none;
 }
 
-#navBtn.open span:nth-child(1) {
-    display: none;
-}
-
-#navBtn span:nth-child(1) {
-    display: block;
-}
-
-#navBtn span:nth-child(2) {
-    display: none;
-}
-
-#navBtn.open span:nth-child(2) {
-    display: block;
-}
-
 #navList.open {
     display:block;
+}
+
+#navBtn.open span:nth-child(1), #navBtn span:nth-child(2) {
+    display: none;
+}
+
+#navBtn span:nth-child(1), #navBtn.open span:nth-child(2) {
+    display: block;
 }
 
 #dateBanner {
@@ -195,10 +189,10 @@ header nav {
     margin: auto;
     max-width: 500px;
     position: relative;
+    z-index: 1;
 }
 
 #cardReservation img {
-    
     width: 100%;
     border-radius: 50px;
     border: 10px solid #595358;
@@ -218,7 +212,6 @@ header nav {
 #cardReservation button:hover {
     background-color: #FF8484;
 }
-
 
 
 /* ------------------------------------------------------------------ */

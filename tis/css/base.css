@@ -10,10 +10,6 @@ font-family: 'Julius Sans One', sans-serif;
 
 */
 
-#Divider {
-    height: 200px;
-}
-
 * {box-sizing: border-box;}
 
 body {
@@ -183,6 +179,11 @@ header nav {
     margin: 0;
     display: flex;
     justify-content: center;
+}
+
+.socialIcons:hover {
+    background-color: #998FC7;
+    border-radius: 10px;
 }
 
 

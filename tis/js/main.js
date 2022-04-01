@@ -1,6 +1,6 @@
 // For Date display at top of page
 let now = new Date();
-let date = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(now);
+let date = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 let dateBanner = document.querySelector('#dateBanner');
 dateBanner.textContent = date;
 

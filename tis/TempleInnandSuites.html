@@ -34,11 +34,22 @@
         </nav>
     </header>
     <main>
-        <div id="cardReservation">
-            <img src="images/sealing_room_lds.jpg" alt="Image of the Denver, Colorado Temple" loading="lazy">
-            <button type="button" class="reservationsLink">Make a Reservation</button>
+        <div id="weatherAlert"></div>
+        <div id="cardsGrid">
+            <div id="cardReservation">
+                <img src="images/sealing_room_lds.jpg" alt="Image of the Denver, Colorado Temple" loading="lazy">
+                <button type="button" class="reservationsLink">Make a Reservation</button>
+            </div>
+            <div id="templeSpotlight"></div>
+            <div id="servicesCard"></div>
+            <div id="weatherCurrent"></div>
+            <section id="weatherForcast">
+                <h2>3 Day Forcast</h2>
+                <div id="weatherForcast1"></div>
+                <div id="weatherForcast2"></div>
+                <div id="weatherForcast3"></div>
+            </section>
         </div>
-        <div id="templeSpotlight"></div>
     </main>
     <footer>
         <div id="footerLogo"><img src="images/templeTransparent.png" alt="Temple Inn & Suites Logo"></div>
@@ -51,6 +62,7 @@
         <div id="footerCopy"></div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
 

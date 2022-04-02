@@ -523,6 +523,100 @@ header nav {
     background-color: white;
 }
 
+/* ------------------------------------------------------------------ */
+/* Reservations Form */
+
+#reserveMain {
+    display: flex;
+    flex-direction: column;
+}
+
+#reserveMain h2 {
+    font-size: 2rem;
+    color: #998FC7;
+    border-bottom: 1px solid #998FC7;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#reserveMain h3 {
+    color: #FF8484;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+#reserveMain form {
+    width: 90%;
+    margin: auto;
+}
+
+#reserveForm fieldset label.top input, #reserveForm fieldset label.radio, #reserveForm fieldset label.top textarea, #reserveForm fieldset label.top select {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+#reserveForm input, #reserveForm select {
+    height: 45px;
+}
+
+#reserveForm label {
+    display: flex;
+    flex-direction: column;
+    color: #595358;
+    background-color: rgb(153, 143, 199, .2);
+    border: 1px solid #998FC7;
+    border-radius: 20px;
+    padding: 5px;
+    width: 50%;
+    min-width: 300px;
+    font-size: 1.2rem;
+}
+
+#reserveMain fieldset {
+    border: 2px solid #998FC7;
+    border-radius: 50px;
+    padding: 20px;
+    max-width: 650px;
+    margin-bottom: 30px;
+    color: #595358;
+}
+
+#reserveForm div {
+    font-size: 1.2rem;
+}
+
+#reserveMain legend {
+    background-color: #998FC7;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: 1px solid #595358;
+    padding: 10px;
+}
+
+label.radio input{
+    display: inline-block;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#reserveForm label.radio {
+    margin-left: 20px;
+}
+
+#reserveBtn {
+    background-color: #FF8484;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    color: white;
+    padding: 10px;
+    height: 50px;
+    width: 40%;
+    min-width: 210px;
+}
 
 /* ------------------------------------------------------------------ */
 /* Footer */

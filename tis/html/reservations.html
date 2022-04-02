@@ -33,8 +33,51 @@
             </ul>
         </nav>
     </header>
-    <main>
-       
+    <main id="reserveMain">
+        <h2>Make a Normal Stay Reservation</h2>
+        <h3>Reservation Submission Form</h3>
+        <form method="get" action="reservationsthankyou.html" id="reserveForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name<input type="text" name="fname" required autofocus></label>
+                <label class="top">Last Name<input type="text" name="lname" required></label>
+                <label class="top">Email Address<input type="email" name="email" placeholder="emailaddress@email.com" required></label>
+                <label class="top">Cell Phone Number<input type="tel" name="phoneNumber" required></label>
+                <label class="top">Home State or Country<input type="text" name="stateCountry" required></label>
+                <label class="top" id="formComments">Special Accomodations/Comments<textarea name="comments"></textarea></label>
+                <!-- title="Your professional business title goes here" pattern="[A-Za-z -]{7,}" -->
+            </fieldset>
+            <fieldset>
+                <legend>Reservation Information</legend>
+                <label class="top">Check-in Date<input type="date" name="checkin" required></label>
+                <label class="top">Check-out Date<input type="date" name="checkout" required></label>
+                <div id="roomLocation">Location</div>
+                <label class="radio"><input type="radio" name="location" value="denver"> Denver, Colorado</label>
+                <label class="radio"><input type="radio" name="location" value="anchorage"> Anchorage, Alaska</label>
+                <label class="radio"><input type="radio" name="location" value="timpanogos"> Mount Timpanogos, Utah</label>
+                <label class="radio"><input type="radio" name="location" value="idahofalls"> Idaho Falls, Idaho</label>    
+                <div id="roomType">Type of Room</div>  
+                <label class="radio"><input type="radio" name="type" value="king"> 1 King Bed</label>
+                <label class="radio"><input type="radio" name="type" value="queens"> 2 Queen Beds</label>
+                <label class="radio"><input type="radio" name="type" value="suite"> 2 Queen Beds Suite</label>   
+                <label class="top">Number of Rooms:
+                    <select name="numRooms">
+                        <option value="" selected="selected">Please select number of rooms</option>
+                        <option value="1">1 room</option>
+                        <option value="2">2 rooms</option>
+                        <option value="3">3 rooms</option>
+                        <option value="4">4 rooms</option>
+                        <option value="5">5 rooms</option>
+                        <option value="6">6 rooms</option>
+                        <option value="7">7 rooms</option>
+                        <option value="8">8 rooms</option>
+                        <option value="9">9 rooms</option>
+                        <option value="10">10 rooms</option>
+                    </select>
+                </label>      
+            </fieldset>
+            <input type="submit" value="Reserve your Room(s)" id="reserveBtn">
+        </form>
     </main>
     <footer>
         <div id="footerLogo"><img src="../images/templeTransparent.png" alt="Temple Inn & Suites Logo"></div>

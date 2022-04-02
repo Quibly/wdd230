@@ -45,5 +45,53 @@
         width: 230px;
     }
 
-    
+    #cardsGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #cardReservation {
+        grid-row: 2/3;
+        grid-column: 1/4;
+        width: 50%;
+        margin: auto;
+        justify-self: center;
+    }
+
+    #templeSpotlight {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        height: 100%;
+    }
+
+    #imageContainer {
+        width: 90%;
+    }
+
+    #contactCard {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    #weatherCurrent {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        justify-content: space-between;
+    }
+
+    #weatherForcast {
+        grid-row: 3/4;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+        grid-template-rows: 1fr;
+        grid-gap: 5px;
+        max-width: unset;
+    }
+
+    #weatherForcast div {
+        margin: auto;
+        align-self: center;
+        height: 95%;
+    }
 }

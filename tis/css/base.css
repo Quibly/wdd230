@@ -43,6 +43,7 @@ header {
     align-items: center;
     text-align: center;
     width: 100%;
+    min-height: 100px;
     margin: auto;
     border-bottom: 1px solid #595358;
 }
@@ -501,15 +502,25 @@ header nav {
     text-align: center;
 }
 
-.thumbs {
+.templeCards button {
     width: 50px;
     background-color: white;
     font-size: 1.5rem;
+    border-radius: 20px;
 }
 
-.thumbs:hover {
+.templeCards button:hover {
     background-color: #998FC7;
-    border-radius: 20px;
+}
+
+.templeCards button.thumbs-up {
+    background-color: #998FC7;
+    width: 90%;
+    margin: auto;
+}
+
+.templeCards button.thumbs-up:hover {
+    background-color: white;
 }
 
 

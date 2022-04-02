@@ -1,0 +1,83 @@
+const getTemplesJSON = async url => {
+    const response = await fetch(url);
+    return response.json(); 
+};
+getTemplesJSON("../data/templeData.json")
+   .then(data => displayTemples(data));
+
+function displayTemples(data) {
+    templeString = data.temples;
+    for (let i = 0; i < 4; i++) {
+        let templeCard;
+        switch (i) {
+            case 0:
+                templeCard = document.querySelector(`#templeCard1`);
+                break;
+            case 1:
+                templeCard = document.querySelector(`#templeCard2`);
+                break;
+            case 2:
+                templeCard = document.querySelector(`#templeCard3`);
+                break;
+            case 3:
+                templeCard = document.querySelector(`#templeCard4`);
+        }
+
+        const name = templeString[i].name;
+        const address = templeString[i].address;
+        const telephone = templeString[i].telephone;
+        const email = templeString[i].email;
+        const image = templeString[i].image;
+        const services = templeString[i].services;
+        const history = templeString[i].history;
+        const ordinanceSchedule = templeString[i].ordinanceSchedule;
+        const sessionSchedule = templeString[i].sessionSchedule;
+        const templeClosureSchedule = templeString[i].templeClosureSchedule;
+
+        const serviceString = services.join('</br>');
+        const historyString = history.join('</br>');
+        const closureString = templeClosureSchedule.join('</br></br>');
+        
+        const tname = document.createElement('h3');
+        const taddress = document.createElement('p');
+        const tphone = document.createElement('p');
+        const temail = document.createElement('a');
+        const timage = document.createElement('img');
+        const imgContainer = document.createElement('div');
+        const tservices = document.createElement('p');
+        const thistory = document.createElement('p');
+        const tordinance = document.createElement('a');
+        const tsession = document.createElement('a');
+        const tclosure = document.createElement('p');
+
+        timage.setAttribute('src', image);
+        timage.setAttribute('alt', 'Image of the temple');
+        timage.setAttribute('loading', 'lazy');
+        imgContainer.appendChild(timage);
+        imgContainer.setAttribute('class', 'tImgContainer');
+
+        tname.textContent = name;
+        taddress.textContent = address;
+        tphone.textContent = telephone;
+        temail.setAttribute('href', email)
+        temail.textContent = `Send an email to the Temple`;
+        tservices.innerHTML = serviceString;
+        thistory.innerHTML = historyString;
+        tordinance.setAttribute('href', email)
+        tordinance.textContent = `Schedule Ordinances`;
+        tsession.setAttribute('href', email)
+        tsession.textContent = `Schedule Sessions`;
+        tclosure.innerHTML = `Temple Closure Dates:</br></br>${closureString}`;
+
+        templeCard.appendChild(tname);
+        templeCard.appendChild(imgContainer);
+        templeCard.appendChild(taddress);
+        templeCard.appendChild(tphone);
+        templeCard.appendChild(temail);
+        templeCard.appendChild(tservices);
+        templeCard.appendChild(thistory);
+        templeCard.appendChild(tordinance);
+        templeCard.appendChild(tsession);
+        templeCard.appendChild(tclosure);
+    }
+}

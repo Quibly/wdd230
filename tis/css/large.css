@@ -94,4 +94,16 @@
         align-self: center;
         height: 95%;
     }
+
+    #templeMain {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #templeMain {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
 }

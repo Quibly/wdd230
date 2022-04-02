@@ -51,17 +51,17 @@
                 <legend>Reservation Information</legend>
                 <label class="top">Check-in Date<input type="date" name="checkin" required></label>
                 <label class="top">Check-out Date<input type="date" name="checkout" required></label>
-                <div id="roomLocation">Location</div>
-                <label class="radio"><input type="radio" name="location" value="denver"> Denver, Colorado</label>
+                <div id="roomLocation">Location  (*Required)</div>
+                <label class="radio"><input type="radio" name="location" value="denver" required> Denver, Colorado</label>
                 <label class="radio"><input type="radio" name="location" value="anchorage"> Anchorage, Alaska</label>
                 <label class="radio"><input type="radio" name="location" value="timpanogos"> Mount Timpanogos, Utah</label>
                 <label class="radio"><input type="radio" name="location" value="idahofalls"> Idaho Falls, Idaho</label>    
-                <div id="roomType">Type of Room</div>  
-                <label class="radio"><input type="radio" name="type" value="king"> 1 King Bed</label>
+                <div id="roomType">Type of Room  (*Required)</div>  
+                <label class="radio"><input type="radio" name="type" value="king" required> 1 King Bed</label>
                 <label class="radio"><input type="radio" name="type" value="queens"> 2 Queen Beds</label>
                 <label class="radio"><input type="radio" name="type" value="suite"> 2 Queen Beds Suite</label>   
                 <label class="top">Number of Rooms:
-                    <select name="numRooms">
+                    <select name="numRooms" required>
                         <option value="" selected="selected">Please select number of rooms</option>
                         <option value="1">1 room</option>
                         <option value="2">2 rooms</option>

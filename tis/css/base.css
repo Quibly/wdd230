@@ -440,7 +440,7 @@ header nav {
 /* ------------------------------------------------------------------ */
 /* Temple Page */
 
-main h2 {
+#templeHeading {
     font-size: 3rem;
     color: #998FC7;
     text-align: center;
@@ -471,6 +471,17 @@ main h2 {
 
 .templeCards a {
     color: #FF8484;
+    text-decoration: none;
+}
+
+.templeCards a:hover {
+    background-color: #FF8484;
+    color: white;
+}
+
+.templeCards a:active {
+    background-color: #FF8484;
+    color: black;
 }
 
 .tImgContainer {
@@ -488,6 +499,17 @@ main h2 {
     color: #FF8484;
     font-size: 1.5rem;
     text-align: center;
+}
+
+.thumbs {
+    width: 50px;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+.thumbs:hover {
+    background-color: #998FC7;
+    border-radius: 20px;
 }
 
 

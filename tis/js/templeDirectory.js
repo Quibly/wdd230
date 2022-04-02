@@ -33,6 +33,7 @@ function displayTemples(data) {
         const ordinanceSchedule = templeString[i].ordinanceSchedule;
         const sessionSchedule = templeString[i].sessionSchedule;
         const templeClosureSchedule = templeString[i].templeClosureSchedule;
+        const thumbsUp = localStorage.getItem(`thumbsUp${i+1}`);
 
         const serviceString = services.join('</br>');
         const historyString = history.join('</br>');
@@ -49,6 +50,7 @@ function displayTemples(data) {
         const tordinance = document.createElement('a');
         const tsession = document.createElement('a');
         const tclosure = document.createElement('p');
+        const tlike = document.createElement('button');
 
         timage.setAttribute('src', image);
         timage.setAttribute('alt', 'Image of the temple');
@@ -63,12 +65,20 @@ function displayTemples(data) {
         temail.textContent = `Send an email to the Temple`;
         tservices.innerHTML = serviceString;
         thistory.innerHTML = historyString;
-        tordinance.setAttribute('href', email)
+        tordinance.setAttribute('href', ordinanceSchedule)
         tordinance.textContent = `Schedule Ordinances`;
-        tsession.setAttribute('href', email)
+        tsession.setAttribute('href', sessionSchedule)
         tsession.textContent = `Schedule Sessions`;
         tclosure.innerHTML = `Temple Closure Dates:</br></br>${closureString}`;
+        tlike.setAttribute('type', 'button');
+        tlike.setAttribute('id', `thumbs-up${i+1}`);
+        tlike.setAttribute('onclick', `toggleThumbs${i+1}(this)`);
+        if (thumbsUp == 'thumbs-up') {
+            tlike.setAttribute('class', 'thumbs-up');
+        }
+        tlike.innerHTML = '&#x1F44D;'; //&#x1F44D; Thumbs Up &#x1F44E; Thumbs Down
 
+        templeCard.appendChild(tlike);
         templeCard.appendChild(tname);
         templeCard.appendChild(imgContainer);
         templeCard.appendChild(taddress);
@@ -81,3 +91,4 @@ function displayTemples(data) {
         templeCard.appendChild(tclosure);
     }
 }
+

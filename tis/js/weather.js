@@ -1,12 +1,42 @@
-const getJSON = async url => {
-    const response = await fetch(url);
-    return response.json(); 
-};
-getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=40.45749307996542&lon=-109.52854471895078&units=imperial&lang=en&appid=7896a0abdc6f34148aad2107b8c89750")
-   .then(data => displayWeather(data));
+let latitude;
+let longitude;
+let locationLink;
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(useLocation, defaultLocation)
+    }
+}
+
+function useLocation(position) {
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+    locationLink = "https://api.openweathermap.org/data/2.5/onecall?lat=" + latitude + "&lon=" + longitude + "&units=imperial&lang=en&appid=7896a0abdc6f34148aad2107b8c89750";
+
+    const getJSON = async url => {
+        const response = await fetch(url);
+        return response.json(); 
+    };
+    getJSON(locationLink)
+       .then(data => displayWeather(data));
+}
+
+function defaultLocation(error) {
+    latitude = 39.7392;
+    longitude = 104.9903;
+    locationLink = "https://api.openweathermap.org/data/2.5/onecall?lat=" + latitude + "&lon=" + longitude + "&units=imperial&lang=en&appid=7896a0abdc6f34148aad2107b8c89750";
+
+    const getJSON = async url => {
+        const response = await fetch(url);
+        return response.json(); 
+    };
+    getJSON(locationLink)
+       .then(data => displayWeather(data));
+}
+
+getLocation();
 
 function displayWeather(data) {
-    console.log(data);
     let weatherString = data;
     //If there is a weather alert this IF statement will add a banner to display the alert information.
     //This includes a button assigned for closing the alert banner.
@@ -80,27 +110,25 @@ function displayWeather(data) {
         forcast.appendChild(tempcurrent);
         forcast.appendChild(tempHiLo);
     }
-    // let weatherIcon= document.querySelector('#weatherIcon');
-    // let weatherTemp= document.querySelector('#weatherTemp');
-    // let weatherCondition= document.querySelector('#weatherCondition');
-    // let weatherWindSpeed= document.querySelector('#weatherWindSpeed');
-    // let weatherWindChill= document.querySelector('#weatherWindChill');
-    // let temperature = weatherString.main.temp;
-    // let speed = weatherString.wind.speed;
-    // let windChill = 35.74 + (0.6215 * temperature) - (35.75 * (speed ** 0.16)) + (0.4275 * temperature * (speed ** 0.16));
-    // let iconValue = weatherString.weather[0].icon;
-    // let iconImageURL =  `https://openweathermap.org/img/wn/${iconValue}@2x.png`;
-    // let iconImage = new Image();
-    // iconImage.setAttribute('alt', 'Weather Icon showing weather conditions');
-    // iconImage.src = iconImageURL;
-    // weatherIcon.appendChild(iconImage);
-    // weatherTemp.textContent = `${weatherString.main.temp.toFixed(0)}\u00B0 F`;
-    // weatherCondition.textContent = weatherString.weather[0].main;
-    // weatherWindSpeed.textContent = `Wind Speed: ${weatherString.wind.speed.toFixed(1)} mph`;
-    // if ((temperature <= 50)&&(speed > 3)) {
-    //     weatherWindChill.textContent = `Wind Chill: ${windChill.toFixed(0)}\u00B0 F`;
-    // } else {
-    //     weatherWindChill.textContent = 'Wind Chill: N/A';
-    // }
 
+    //Current weather conditions card
+    let weatherCurrent = document.querySelector('#weatherCurrent');
+    let currTemp = weatherString.current.temp;
+    let currDesc = weatherString.current.weather[0].description;
+    let currHum = weatherString.current.humidity;
+
+    const cardHead = document.createElement('h3');
+    const cardTemp = document.createElement('p');
+    const cardDesc = document.createElement('p');
+    const cardHum = document.createElement('p');
+
+    cardHead.textContent = `Current Conditions`;
+    cardTemp.innerHTML = `Temp: &nbsp;${currTemp} &#176;F`;
+    cardDesc.innerHTML = `Desc: &nbsp;${currDesc.charAt(0).toUpperCase()}${currDesc.slice(1)}`;
+    cardHum.innerHTML = `Humidity: &nbsp;${currHum}%`;
+    
+    weatherCurrent.appendChild(cardHead);
+    weatherCurrent.appendChild(cardTemp);
+    weatherCurrent.appendChild(cardDesc);
+    weatherCurrent.appendChild(cardHum);
 }

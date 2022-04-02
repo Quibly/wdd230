@@ -141,6 +141,7 @@ header nav {
     padding: 20px;
     margin: 10px;
     background-color: #595358;
+    box-shadow: 0 0 10px #998FC7;
     color: white;
 }
 
@@ -185,7 +186,7 @@ header nav {
 /* Home Main */
 
 /* ------------------------------------------------------------- */
-/* Weather Alert Banner Main */
+/* Home Weather Alert Banner Main */
 #weatherAlert {
     display: flex;
     flex-direction: column;
@@ -234,7 +235,7 @@ header nav {
 }
 
 /* ------------------------------------------------------------- */
-/* Reservation Card Main */
+/* Home Reservation Card Main */
 
 #cardReservation {
     width: 95%;
@@ -274,7 +275,7 @@ header nav {
 
 
 /* ------------------------------------------------------------------ */
-/* Weather 3 day forcast */
+/* Home Weather 3 day forcast */
 
 #weatherForcast {
     display: flex;
@@ -305,6 +306,109 @@ header nav {
     background-color: white;
     margin-bottom: 10px;
 }
+
+/* ------------------------------------------------------------------ */
+/* Home Weather Current conditions */
+
+#weatherCurrent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    max-width: 500px;
+    border: 10px solid #595358;
+    border-radius: 50px;
+}
+
+#weatherCurrent h3 {
+    color: #FF8484;
+}
+
+#weatherCurrent p {
+    margin: 0 0 7px 0;
+    color: #998FC7;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Home Temple Spotlight Card */
+
+#templeSpotlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    max-width: 500px;
+    border: 10px solid #595358;
+    border-radius: 50px;
+}
+
+#templeSpotlight h3 {
+    color: #FF8484;
+}
+
+#templeSpotlight p {
+    color: #998FC7;
+}
+
+#imageContainer {
+    width: 95%;
+}
+
+#imageContainer img {
+    width: 100%;
+    border-radius: 50px;
+    border: 10px solid #595358;
+}
+
+/* ------------------------------------------------------------------ */
+/* Home Contact Card */
+
+#contactCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    max-width: 500px;
+    border: 10px solid #595358;
+    border-radius: 50px;
+}
+
+#contactCard h3 {
+    color: #FF8484;
+}
+
+#contactCard p {
+    margin: 0 0 7px 0;
+    color: #998FC7;
+}
+
+#contactCard button {
+    background-color: #998FC7;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+#contactCard button:hover {
+    background-color: #FF8484;
+}
+
+#contactCard button:active {
+    background-color: #FF8484;
+    color: black;
+}
+
 
 /* ------------------------------------------------------------------ */
 /* Footer */

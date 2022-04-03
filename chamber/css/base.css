@@ -489,7 +489,8 @@ main div p {
 }
 
 #spot1 a:link, #spot2 a:link, #spot3 a:link {
-    color: white;
+    background-color: white;
+    color: #6b0504;
 }
 
 #spot1 a:visited, #spot2 a:visited, #spot3 a:visited {

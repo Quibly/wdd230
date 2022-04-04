@@ -628,6 +628,19 @@ label.radio input{
 }
 
 /* ------------------------------------------------------------------ */
+/* Header */
+
+#reservationThankYou {
+    width: 60%;
+    color: #998FC7;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+
+/* ------------------------------------------------------------------ */
 /* Footer */
 
 footer {

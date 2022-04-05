@@ -63,7 +63,7 @@ function displayWeather(data) {
         const alertEventP1 = document.createElement('span');
         const alertEventP2 = document.createElement('p');
 
-        alertEventH2.textContent = `Weather Alert: ${alertEvent}`;
+        alertEventH2.textContent = `Weather Alert: ${alertEvent} for Denver, Colorado`;
         alertEventP1.innerHTML = `Starts: &nbsp; ${formatStart} &nbsp; &nbsp; &nbsp; &nbsp; Ends: &nbsp; ${formatEnd}`;
         alertEventP2.innerText = alertDescription;
 

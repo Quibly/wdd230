@@ -53,7 +53,7 @@ function displayTemples(data) {
         const tlike = document.createElement('button');
 
         timage.setAttribute('src', image);
-        timage.setAttribute('alt', 'Image of the temple');
+        timage.setAttribute('alt', `Temple number ${i+1}`);
         timage.setAttribute('loading', 'lazy');
         imgContainer.appendChild(timage);
         imgContainer.setAttribute('class', 'tImgContainer');
@@ -66,10 +66,10 @@ function displayTemples(data) {
         tservices.innerHTML = serviceString;
         thistory.innerHTML = historyString;
         tordinance.setAttribute('href', ordinanceSchedule)
-        tordinance.textContent = `Schedule Ordinances`;
+        tordinance.innerHTML = `Schedule Ordinances`;
         tsession.setAttribute('href', sessionSchedule)
         tsession.textContent = `Schedule Sessions`;
-        tclosure.innerHTML = `Temple Closure Dates:</br></br>${closureString}`;
+        tclosure.innerHTML = `<strong>Temple Closure Dates:</strong><br><br>${closureString}`;
         tlike.setAttribute('type', 'button');
         tlike.setAttribute('id', `thumbs-up${i+1}`);
         tlike.setAttribute('onclick', `toggleThumbs${i+1}(this)`);
@@ -86,9 +86,9 @@ function displayTemples(data) {
         templeCard.appendChild(temail);
         templeCard.appendChild(tservices);
         templeCard.appendChild(thistory);
-        templeCard.appendChild(tordinance);
         templeCard.appendChild(tsession);
         templeCard.appendChild(tclosure);
+        templeCard.appendChild(tordinance);
     }
 }
 

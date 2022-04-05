@@ -118,7 +118,7 @@ function displayWeather(data) {
     let currDesc = weatherString.current.weather[0].description;
     let currHum = weatherString.current.humidity;
 
-    const cardHead = document.createElement('h3');
+    const cardHead = document.createElement('h2');
     const cardTemp = document.createElement('p');
     const cardDesc = document.createElement('p');
     const cardHum = document.createElement('p');

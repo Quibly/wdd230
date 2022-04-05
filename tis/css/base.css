@@ -16,6 +16,10 @@ body {
     min-width: 400px;
 }
 
+main {
+    background-image: "./images/olive_branch.webp";
+}
+
 h1, h2, h3 {
     font-family: 'Julius Sans One', sans-serif;
     color: #595358;
@@ -523,9 +527,15 @@ header nav {
 }
 
 .templeCards button.thumbs-up {
-    background-color: #b3a2ff;
+    background-color: rgb(109, 90, 197, .9);
     width: 90%;
     margin: auto;
+}
+
+.templeCards button.thumbs-up::after {
+    content: ' Favorite';
+    font-size: 1.2rem;
+    color: white;
 }
 
 .templeCards button.thumbs-up:hover {

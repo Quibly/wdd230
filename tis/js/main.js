@@ -1,5 +1,5 @@
 // //For samesite cookies
-// document.cookie = "SameSite=None; Secure";
+document.cookie = "SameSite=None; Secure";
 // alert( document.cookie );
 
 // For Date display at top of page

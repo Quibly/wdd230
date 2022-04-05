@@ -3,9 +3,10 @@ let longitude;
 let locationLink;
 
 function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(useLocation, defaultLocation)
-    }
+    // if (navigator.geolocation) {
+    //     navigator.geolocation.getCurrentPosition(useLocation, defaultLocation)
+    // }
+    defaultLocation();
 }
 
 function useLocation(position) {

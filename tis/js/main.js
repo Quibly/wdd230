@@ -1,3 +1,7 @@
+// //For samesite cookies
+// document.cookie = "SameSite=None; Secure";
+// alert( document.cookie );
+
 // For Date display at top of page
 let now = new Date();
 let date = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);

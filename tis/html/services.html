@@ -34,7 +34,85 @@
         </nav>
     </header>
     <main id="servicesMain">
-        
+        <section id="amenitiesServices">
+            <h2>Amenities and Services</h2>
+            <div id="amenities">
+                <h3>Free Amenities</h3>
+                <ul>
+                    <li>Breakfast</li>
+                    <li>Exercise/workout room</li>
+                    <li>Indoor pool</li>
+                    <li>WiFi high-speed internet access and smart TVs</li>
+                    <li>Parking</li>
+                    <li>Temple shuttle</li>
+                    <li>Family history consultation and family ordinance card service</li>
+                </ul>
+            </div>
+            <div id="special">
+                <h3>Specialized Services</h3>
+                <ul>
+                    <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</li>
+                    <li>A playroom and low-cost, short-term babysitting services for the children of patrons</li>
+                    <li>Long-term stay accommodations in kitchenette suites for full-time temple missionaries</li>
+                    <li>Temple history themed reception and sitting area</li>
+                    <li>A wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                    <li>A family search center that supports family search and ordinance work</li>
+                </ul>
+            </div>
+        </section>
+        <section id="receptionMission">
+            <h2>Weddings and Temple Missionaries</h2>
+            <button type="button" id="weddingBtn" class="recmisBtn selected">Weddings</button>
+            <button type="button" id="missionBtn"class="recmisBtn">Temple Missionaries</button>
+            <div id="subPage">
+                <div id="reception">
+                    <h3>Wedding Reception Services</h3>
+                    <p>There can be a lot of choices to make when you're preparing a wedding reception. Our packages are designed to make it easier so you can enjoy your special day. Tell us your wedding colors and we have 3 options designed to accomodate various budgets and group arrangements:</p>
+                    <ul>
+                        <li>Table Services<p>If you are looking for all the convenience you can find for your guests, then this would be the right option. We'll prepare the reception hall to match your color preferences and provide a menu table service for all of your guests to sit and relax.</p></li>
+                        <li>Family Services<p>The Family Services are a hybrid between full table services and the buffet service option. With this option your guests will be served family sized portions of menu items for all to share at the table.</p></li>
+                        <li>Buffet Services<p>With Buffet Services, your guests can eat and grab food at their convenience. This is a favorite option for those looking to save some money on waitstaff, while still providing flavorful options for their guests.</p></li>
+                    </ul>
+                    <form id="contactForm1" action="#">
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                                <label class="top">First Name<input type="text" name="fname" required></label>
+                                <label class="top">Last Name<input type="text" name="lname" required></label>
+                                <label class="top">Phone Number<input type="tel" name="phone" required></label>
+                                <label class="top">Email Address<input type="email" name="email" placeholder="emailaddress@email.com" required></label>
+                        </fieldset>
+                        <input type="submit" value="Contact Us for Details" id="contactBtn">
+                    </form>
+                </div>
+                <div id="mission" class="unselected">
+                    <h3>Temple Missionary Accomodations</h3>
+                    <p>We have room type selections for various needs and party sizes:</p>
+                        <ul>
+                            <li>1 King Bed</li>
+                            <li>2 Queen Beds</li>
+                            <li>2 Queen Beds Suite</li>
+                        </ul>
+                    <p> This is a display of some of our accommodations. Please contact us for more details.</p>
+                    <div id="imageGallery">
+                        <div id="image1" class="selectedImg"><img src="../images/pexels-pixabay-262048.jpg" alt="Image of a King Bed Hotel Room"></div>
+                        <div id="image2"><img src="../images/mky-moody-AUF6Gl4wwzA-unsplash.jpg" alt="Image of a 2 Queen Bed Hotel Room"></div>
+                        <div id="image3"><img src="../images/pexels-max-vakhtbovych-7546608.jpg" alt="Image of a hotel bathroom"></div>
+                        <a class="left" onclick="scrollImg(-1)">&#10094;</a>
+                        <a class="right" onclick="scrollImg(1)">&#10095;</a>
+                    </div>
+                    <form id="contactForm2" action="#">
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                                <label class="top">First Name<input type="text" name="fname" required></label>
+                                <label class="top">Last Name<input type="text" name="lname" required></label>
+                                <label class="top">Phone Number<input type="tel" name="phone" required></label>
+                                <label class="top">Email Address<input type="email" name="email" placeholder="emailaddress@email.com" required></label>
+                        </fieldset>
+                        <input type="submit" value="Contact Us for Details" id="contactBtn">
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div id="footerLogo"><img src="../images/templeTransparent.png" alt="Temple Inn & Suites Logo"></div>
@@ -45,7 +123,10 @@
         </div>
         <div id="footerMap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9116.636261889998!2d-77.09572388126803!3d38.98205787373754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1648335524067!5m2!1sen!2sus" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div id="footerCopy"></div>
+        <div id="attribute"><a href="./html/attributions.html">Attributions/Resources</a></div>
     </footer>
     <script src="../js/main.js"></script>
+    <script src="../js/weddingMissionToggle.js"></script>
+    <script src="../js/gallery.js"></script>
 </body>
 </html>

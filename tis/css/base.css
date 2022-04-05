@@ -128,12 +128,15 @@ header nav {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 95%;
+    width: 95px;
+    height: 95px;
 }
 
 #headerLogo img {
     grid-column: 1/2;
-    width: 100%;
+    width: 95px;
+    height: 95px;
+    border: 1px solid #595358;
     border-radius: 50px;
 }
 

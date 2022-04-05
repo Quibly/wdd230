@@ -5,7 +5,7 @@ let locationLink;
 function getLocation() {
     // if (navigator.geolocation) {
     //     navigator.geolocation.getCurrentPosition(useLocation, defaultLocation)
-    // }
+    // } -- I commented out this code because it was giving me Lighthouse errors for best practices since it's loading the location data without user interaction for location services.
     defaultLocation();
 }
 

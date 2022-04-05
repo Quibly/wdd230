@@ -14,7 +14,7 @@ function displayTempleSpotlight(data) {
     let templePhone = templeString[0].telephone;
     let templeImage = templeString[0].image;
 
-    const name = document.createElement('h3');
+    const name = document.createElement('h2');
     const address = document.createElement('p');
     const phone = document.createElement('p');
     const imageContainer = document.createElement('div');

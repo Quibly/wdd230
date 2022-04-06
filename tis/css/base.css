@@ -472,7 +472,7 @@ header nav {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 7rem 1fr 3rem 5rem 4rem 10rem 3rem 11rem 3rem 39rem;
+    grid-template-rows: 3rem 7rem 1fr 4rem 5rem 4rem 10rem 3rem 11rem 3rem 39rem;
     margin: auto;
     margin-bottom: 10px;
     padding: 20px;
@@ -505,6 +505,7 @@ header nav {
 .tImgContainer {
     margin: auto;
     width: 90%;
+    margin-bottom: 20px;
 }
 
 .tImgContainer img {

@@ -101,15 +101,18 @@ function displayWeather(data) {
         let formDate= new Intl.DateTimeFormat("en-US", { dateStyle: "long" }).format(forcastDate);
         const dayLabel = document.createElement('h3');
         const tempcurrent = document.createElement('p');
-        const tempHiLo = document.createElement('p');
+        const tempHigh = document.createElement('p');
+        const tempLow = document.createElement('p');
 
         dayLabel.textContent = `${formDate}`;
         tempcurrent.innerHTML = `Day Temp: &nbsp; ${weatherString.daily[i].temp.day}&#176;`;
-        tempHiLo.innerHTML = `Min: &nbsp;${weatherString.daily[i].temp.min}&#176; &nbsp; &nbsp; &nbsp; Max: &nbsp;${weatherString.daily[i].temp.max}&#176;`;
-        
+        tempHigh.innerHTML = `Min: &nbsp;${weatherString.daily[i].temp.min}&#176;`;
+        tempLow.innerHTML = `Max: &nbsp;${weatherString.daily[i].temp.max}&#176;`;
+
         forcast.appendChild(dayLabel);
         forcast.appendChild(tempcurrent);
-        forcast.appendChild(tempHiLo);
+        forcast.appendChild(tempHigh);
+        forcast.appendChild(tempLow);
     }
 
     //Current weather conditions card

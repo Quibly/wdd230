@@ -14,7 +14,7 @@ document.querySelector("#footerCopy").textContent = `Copyright 2022 | Adam Dutso
 // For view toggle of navigation menu
 let navBtn = document.querySelector('#navBtn');
 let navList = document.querySelector('#navList');
-navBtn.onclick = toggleMenu;
+navBtn.addEventListener('click', function() {toggleMenu()}, {passive: true});
 
 function toggleMenu() {
     navBtn.classList.toggle("open");

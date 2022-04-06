@@ -72,7 +72,7 @@ function displayWeather(data) {
         weatherAlert.appendChild(alertEventP1);
         weatherAlert.appendChild(alertEventP2);
 
-        alertEventbutton.addEventListener('click', function() {toggleAlert()});
+        alertEventbutton.addEventListener('click', function() {toggleAlert()}, {passive: true});
 
         function toggleAlert() {
             weatherAlert.setAttribute('style', 'display:none');

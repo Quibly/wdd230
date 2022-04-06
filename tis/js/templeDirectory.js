@@ -54,6 +54,8 @@ function displayTemples(data) {
 
         timage.setAttribute('src', image);
         timage.setAttribute('alt', `Temple number ${i+1}`);
+        timage.setAttribute('width', '425');
+        timage.setAttribute('length', '319');
         timage.setAttribute('loading', 'lazy');
         imgContainer.appendChild(timage);
         imgContainer.setAttribute('class', 'tImgContainer');
@@ -61,13 +63,16 @@ function displayTemples(data) {
         tname.textContent = name;
         taddress.textContent = address;
         tphone.textContent = telephone;
-        temail.setAttribute('href', email)
+        temail.setAttribute('href', email);
+        temail.setAttribute('target', '_blank');
         temail.textContent = `Send an email to the Temple`;
         tservices.innerHTML = serviceString;
         thistory.innerHTML = historyString;
-        tordinance.setAttribute('href', ordinanceSchedule)
+        tordinance.setAttribute('href', ordinanceSchedule);
+        tordinance.setAttribute('target', '_blank');
         tordinance.innerHTML = `Schedule Ordinances`;
-        tsession.setAttribute('href', sessionSchedule)
+        tsession.setAttribute('href', sessionSchedule);
+        tsession.setAttribute('target', '_blank');
         tsession.textContent = `Schedule Sessions`;
         tclosure.innerHTML = `<strong>Temple Closure Dates:</strong><br><br>${closureString}`;
         tlike.setAttribute('type', 'button');

@@ -90,9 +90,9 @@ function displayTemples(data) {
         templeCard.appendChild(taddress);
         templeCard.appendChild(tphone);
         templeCard.appendChild(tservices);
-        templeCard.appendChild(tordinance);
-        templeCard.appendChild(thistory);
         templeCard.appendChild(tsession);
+        templeCard.appendChild(thistory);
+        templeCard.appendChild(tordinance);
         templeCard.appendChild(tclosure);
     }
 }

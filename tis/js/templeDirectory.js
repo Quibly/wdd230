@@ -86,9 +86,9 @@ function displayTemples(data) {
         templeCard.appendChild(tlike);
         templeCard.appendChild(tname);
         templeCard.appendChild(imgContainer);
+        templeCard.appendChild(temail);
         templeCard.appendChild(taddress);
         templeCard.appendChild(tphone);
-        templeCard.appendChild(temail);
         templeCard.appendChild(tservices);
         templeCard.appendChild(tordinance);
         templeCard.appendChild(thistory);

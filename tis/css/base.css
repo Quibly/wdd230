@@ -630,6 +630,8 @@ label.radio input{
 
 #reserveForm label.radio {
     margin-left: 20px;
+    width: 210px;
+    min-width: unset;
 }
 
 #reserveBtn, #contactBtn1, #contactBtn2 {
@@ -657,7 +659,7 @@ label.radio input{
     color: white;
     padding: 10px;
     border-radius: 20px;
-    width: 320px;
+    width: 250px;
     margin-bottom: 10px;
 }
 

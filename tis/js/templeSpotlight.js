@@ -24,7 +24,7 @@ function displayTempleSpotlight(data) {
     image.setAttribute('alt', 'Picture of the Spotlight Temple');
     image.setAttribute('loading', 'lazy');
     image.setAttribute('width', '425');
-    image.setAttribute('length', '319');
+    image.setAttribute('height', '319');
     imageContainer.appendChild(image);
     imageContainer.setAttribute('id', 'imageContainer');
 

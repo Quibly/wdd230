@@ -56,7 +56,7 @@ function displayTemples(data) {
         timage.setAttribute('alt', `Temple number ${i+1}`);
         timage.setAttribute('width', '610');
         timage.setAttribute('height', '458');
-        // timage.setAttribute('loading', 'lazy');
+        timage.setAttribute('loading', 'lazy');
         imgContainer.appendChild(timage);
         imgContainer.setAttribute('class', 'tImgContainer');
 

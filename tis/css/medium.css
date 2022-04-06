@@ -76,12 +76,6 @@
         grid-column: 2/3;
     }
 
-    #templeMain {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-
     .templeCards {
         height: 100%;
     }

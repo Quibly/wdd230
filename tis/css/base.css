@@ -45,12 +45,12 @@ header {
 #header {
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 100px 1fr 65px 65px;
+    grid-template-columns: 105px 1fr 65px 65px;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    min-height: 100px;
+    min-height: 105px;
     margin: auto;
     border-bottom: 1px solid #595358;
 }
@@ -481,9 +481,6 @@ header nav {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: space-between;
-    align-items: center;
-    text-align: start;
     margin: auto;
     margin-bottom: 10px;
     border: 10px solid #595358;

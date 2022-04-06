@@ -630,7 +630,7 @@ label.radio input{
     margin-left: 20px;
 }
 
-#reserveBtn, #contactBtn {
+#reserveBtn, #contactBtn1, #contactBtn2 {
     background-color: rgb(255, 83, 83, .9);
     border-radius: 20px;
     font-size: 1.1rem;
@@ -640,6 +640,14 @@ label.radio input{
     width: 40%;
     min-width: 250px;
     font-family: 'Cutive', serif;
+}
+
+#reserveBtn:hover, #contactBtn1:hover, #contactBtn2:hover {
+    background-color: #6d5ac5;
+}
+
+#reserveBtn:active, #contactBtn1:active, #contactBtn2:active {
+    color: black;
 }
 
 #roomLocation, #roomType {
@@ -714,6 +722,14 @@ label.radio input{
 }
 
 #weddingBtn {
+    border-radius: 50px 0 0 50px;
+}
+
+.recmisBtn:hover {
+    border: 5px solid black;
+}
+
+#weddingBtn:hover {
     border-radius: 50px 0 0 50px;
 }
 

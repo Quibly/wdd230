@@ -71,6 +71,10 @@ header nav {
     cursor: pointer;
 }
 
+#navBtn:active, #navList li:active {
+    border: 1px solid white;
+}
+
 #navBtn span {
     color: white;
 }
@@ -185,6 +189,10 @@ header nav {
 .socialIcons:hover {
     background-color: #6d5ac5;
     border-radius: 10px;
+}
+
+.socialIcons:active {
+    background-color: #ff5353;
 }
 
 /* ------------------------------------------------------------- */

@@ -59,7 +59,6 @@ function displayTemples(data) {
         timage.setAttribute('loading', 'lazy');
         imgContainer.appendChild(timage);
         imgContainer.setAttribute('class', 'tImgContainer');
-        imgContainer.setAttribute('style', '--aspect-ratio:610/458;');
 
         tname.textContent = name;
         taddress.textContent = address;

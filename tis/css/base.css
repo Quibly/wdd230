@@ -399,13 +399,14 @@ header nav {
 }
 
 #imageContainer {
-    width: 50%;
+    width: 60%;
 }
 
 #imageContainer img {
     width: 100%;
     border-radius: 50px;
     border: 10px solid #595358;
+    height: auto;
 }
 
 /* ------------------------------------------------------------------ */
